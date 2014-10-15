@@ -5900,7 +5900,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1445;
+		items=1446;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -20157,6 +20157,16 @@ class Mission
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""markt.jpg""]";
+		};
+		class Item1445
+		{
+			position[]={3634.0796,10.111759,13113.484};
+			azimut=215;
+			special="NONE";
+			id=1799;
+			side="EMPTY";
+			vehicle="Campfire_burning_F";
+			skill=0.60000002;
 		};
 	};
 	class Markers
