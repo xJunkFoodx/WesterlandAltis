@@ -4,7 +4,6 @@
 	
 	Description:
 	Don't allow slingloading if we don't have a key to the vehicle
-	Test
 */
 private["_veh"];
 _veh = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
