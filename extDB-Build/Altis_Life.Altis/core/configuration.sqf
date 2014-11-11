@@ -249,7 +249,9 @@ life_licenses =
 	["license_cop_sniper","cop"],
 	["license_cop_dea","cop"],
 	["license_civ_cloth","civ"],
-	["license_civ_moonshine","civ"]
+	["license_civ_moonshine","civ"],
+	["license_cop_negotiate","cop"],
+	["license_cop_melee","cop"]
 
 	/*
 	["license_civ_chocolate","civ"],

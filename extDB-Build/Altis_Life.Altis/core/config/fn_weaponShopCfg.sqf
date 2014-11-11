@@ -95,7 +95,7 @@ switch(_shop) do
 				["MineDetector",nil,1000]
 			];
 		};
-		if (__GETC__(life_coplevel) >= 3 || license_cop_sniper) then {
+		if (__GETC__(life_coplevel) >= 3 || license_cop_negotiate || license_cop_melee) then {
 			_return = _return + 
 			[
 				["SMG_02_F",nil,8000],
@@ -104,7 +104,7 @@ switch(_shop) do
 				["optic_Aco",nil,1500],
 			];
 		};
-		if (__GETC__(life_coplevel) >= 4 || license_cop_sniper) then {
+		if (__GETC__(life_coplevel) >= 4 || license_cop_melee) then {
 			_return = _return + 
 			[
 				["arifle_MXC_Black_F",nil,10000],
@@ -113,10 +113,15 @@ switch(_shop) do
 				["optic_ACO_grn",nil,1500]
 			];
 		};
-		if (__GETC__(life_coplevel) >= 5 || license_cop_sniper) then {
+		if (__GETC__(life_coplevel) >= 5) then {
 			_return = _return + 
 			[
-				["optic_Hamr",nil,3500],
+				["optic_Hamr",nil,3500]
+			];
+		};
+		if (__GETC__(life_coplevel) >= 5 || license_cop_sniper || license_cop_melee) then {
+			_return = _return + 
+			[
 				["SmokeShell",nil,100],
 				["SmokeShellRed",nil,100],
 				["SmokeShellBlue",nil,100]
@@ -133,10 +138,15 @@ switch(_shop) do
 			];
 		};
 		
-		if (__GETC__(life_coplevel) >= 7) then {
+		if (__GETC__(life_coplevel) >= 7 || license_cop_sniper) then {
 			_return = _return + 
 			[
-				["rangefinder",nil,1000],
+				["rangefinder",nil,1000]
+			];
+		};
+		if (__GETC__(life_coplevel) >= 7 || license_cop_sniper || license_cop_melee) then {
+			_return = _return + 
+			[
 				["arifle_MX_GL_Black_F",nil,10000],
 				["3Rnd_UGL_FlareWhite_F",nil,100],
 				["3Rnd_UGL_FlareRed_F",nil,100],
@@ -149,7 +159,7 @@ switch(_shop) do
 			];
 		};
 		
-		if (__GETC__(life_coplevel) >= 8) then {
+		if (__GETC__(life_coplevel) >= 8 || license_cop_sniper) then {
 			_return = _return + 
 			[
 				["srifle_EBR_F",nil,10000],
@@ -166,11 +176,7 @@ switch(_shop) do
 				["B_UavTerminal",nil,50000]
 			];
 		};
-
-		if (license_cop_sniper) then {
-			_return = _return + 
-			[	
-			];
+		
 		};
 		if (license_cop_dea) then {
 			_return = _return + 

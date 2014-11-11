@@ -122,8 +122,10 @@ switch (_var) do
 	case "license_civ_dangerousgoods": {"Gefahrengutlizenz"};
 	case "license_med_car": {"Fuehrerschein Sani"};
 	case "license_civ_lawyer": {"Anwaltslizenz"};
-	case "license_cop_sniper": {"Praezisionsschuetze"};
+	case "license_cop_sniper": {localize "STR_License_Sniper"};
 	case "license_cop_dea": {"DEA Ausbildung"};
 	case "license_civ_cloth": {(localize "STR_License_Cloth")};
 	case "license_civ_moonshine": {(localize "STR_License_Moonshine")};
+	case "license_cop_negotiate": {(localize "STR_License_Negotiation")};
+	case "license_cop_melee": {(localize "STR_License_Melee")};
 };

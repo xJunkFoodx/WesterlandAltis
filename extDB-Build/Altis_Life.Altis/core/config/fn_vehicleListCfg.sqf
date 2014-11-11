@@ -102,20 +102,20 @@ switch (_shop) do
 	case "cop_car":
 	{
 		_return set[count _return,["C_Hatchback_01_F",5000]];
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,["C_SUV_01_F",15000]];			
 		};
-		if(__GETC__(life_coplevel) > 2 || license_cop_dea) then
+		if(__GETC__(life_coplevel) > 3 || license_cop_dea || license_cop_negotiate) then
 		{
 			_return set[count _return,["C_Offroad_01_F",5000]];
 		};
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) > 5 || license_cop_melee) then
 		{
 			_return set[count _return,["B_MRAP_01_F",30000]];
 			
 		};
-		if(license_cop_sniper) then
+		if(__GETC__(life_coplevel) > 7 || license_cop_melee) then
 		{
 			_return set[count _return,["I_MRAP_03_F",80000]];
 		};
@@ -133,15 +133,15 @@ switch (_shop) do
 	
 	case "cop_air":
 	{
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,["B_Heli_Light_01_F",75000]];
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 5 || license_cop_sniper) then
 		{
 			_return set[count _return,["O_Heli_Light_02_unarmed_F",166666]];
 		};
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) > 7 || license_cop_sniper) then
 		{
 			_return set[count _return,["B_Heli_Transport_01_F",200000]];
 		};
@@ -149,15 +149,15 @@ switch (_shop) do
 	
 	case "cop_airhq":
 	{
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,["B_Heli_Light_01_F",75000]];
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 5) then
 		{
 			_return set[count _return,["O_Heli_Light_02_unarmed_F",166666]];
 		};
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) > 7) then
 		{
 			_return set[count _return,["B_Heli_Transport_01_F",200000]];
 		};
@@ -176,16 +176,19 @@ switch (_shop) do
 
 	case "cop_ship":
 	{
+		if(__GETC__(life_coplevel) > 2) then
+		{
 		_return set[count _return,["C_Rubberboat",3000]];
-		if(__GETC__(life_coplevel) > 1) then
+		};
+		if(__GETC__(life_coplevel) > 4) then
 		{
 			_return set[count _return,["C_Boat_Civil_01_police_F",10000]];
 		};
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) > 6) then
 		{
 			_return set[count _return,["B_Boat_Armed_01_minigun_F",75000]];
 		};
-		if(license_cop_sniper) then // Präzis.
+		if(__GETC__(life_coplevel) > 8 || license_cop_sniper) then // Präzis.
 		{
 			_return set[count _return,["B_SDV_01_F",100000]];
 		};
