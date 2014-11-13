@@ -153,6 +153,22 @@ life_cratedrop_positions = [
 	[10644,16014,"Zwischen DP11 und DP12"],
 	[3073,13151,"In der Naehe der Burg Kavala"]
 ];
+life_dealer_positions =
+[
+// Todo positions
+];
+life_dealer_npcs =
+[[dealer1,dealer1_marker],[dealer2,dealer2_marker],[dealer3,dealer3_marker]];
+{
+	private ["_dealer","_marker"];
+	_dealer = _x select 0;
+	_marker = _x select 1;
+	_random = life_dealer_positions select ( floor ( random ( count life_dealer_positions)));
+	_dealer setPos [_random select 0,_random select 1,0];
+	_marker setMarkerPos [_random select 0,_random select 1];
+	
+	life_dealer_positions = life_dealer_positions - [_random];
+}forEach life_dealer_npcs;
 
 [] spawn TON_fnc_spawnParadrop;
 
