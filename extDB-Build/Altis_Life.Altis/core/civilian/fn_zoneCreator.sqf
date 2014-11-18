@@ -15,8 +15,10 @@ private["_appleZones","_peachZones","_heroinZones","_cocaineZones","_weedZones"]
 _appleZones = ["apple_1","apple_2","apple_3","apple_4"];
 _peachZones = ["peaches_1","peaches_2","peaches_3"];
 _heroinZones = ["heroin_1"];
-_cocaineZones = ["cocaine_1"];
-_weedZones = ["weed_1"];
+_cocaineZones = ["cocaine_1","cocaine_2"];
+_weedZones = ["weed_1","weed_2"];
+_grapeZones = ["grape_1"];
+_cottonZones = ["cotton_1"];
 
 //Create apple zones
 {
@@ -87,3 +89,30 @@ _weedZones = ["weed_1"];
 	_zoneReb setTriggerStatements["player in thislist","LIFE_Action_Coke = player addAction[(localize ""STR_Gather_Cocaine""),life_fnc_gather,'',0,false,false,'','!life_action_mining_hotkey_inuse'];","player removeAction LIFE_Action_Coke;"];
 
 } foreach _cocaineZones;
+
+
+{
+	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zone setTriggerArea[25,25,0,false];
+	_zone setTriggerActivation["CIV","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Grape = player addAction[(localize ""STR_Gather_Grapes""),life_fnc_gather,'',0,false,false,'','!life_action_mining_hotkey_inuse'];","player removeAction LIFE_Action_Grape;"];
+
+	_zoneReb = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zoneReb setTriggerArea[25,25,0,false];
+	_zoneReb setTriggerActivation["EAST","PRESENT",true];
+	_zoneReb setTriggerStatements["player in thislist","LIFE_Action_Grape = player addAction[(localize ""STR_Gather_Grapes""),life_fnc_gather,'',0,false,false,'','!life_action_mining_hotkey_inuse'];","player removeAction LIFE_Action_Grape;"];
+
+} foreach _grapeZones;
+
+{
+	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zone setTriggerArea[25,25,0,false];
+	_zone setTriggerActivation["CIV","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Cotton = player addAction[(localize ""STR_Gather_Cotton""),life_fnc_gather,'',0,false,false,'','!life_action_mining_hotkey_inuse'];","player removeAction LIFE_Action_Cotton;"];
+
+	_zoneReb = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zoneReb setTriggerArea[25,25,0,false];
+	_zoneReb setTriggerActivation["EAST","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Cotton = player addAction[(localize ""STR_Gather_Cotton""),life_fnc_gather,'',0,false,false,'','!life_action_mining_hotkey_inuse'];","player removeAction LIFE_Action_Cotton;"];
+
+} foreach _cottonZones;

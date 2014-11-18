@@ -32,7 +32,8 @@ switch (_shop) do
 	
 	case "adac_air_hs": {
 		_return = [
-			["O_Heli_Light_02_unarmed_F",5000]
+			["O_Heli_Light_02_unarmed_F",5000],
+			["O_Heli_Transport_04_F",5000]
 		];
 	};
 
@@ -46,7 +47,8 @@ switch (_shop) do
 	
 	case "med_air_hs": {
 		_return = [
-			["O_Heli_Light_02_unarmed_F",5000]
+			["O_Heli_Light_02_unarmed_F",5000],
+			["O_Heli_Transport_04_medevac_F",5000]
 		];
 	};
 
@@ -87,6 +89,7 @@ switch (_shop) do
 			["I_Truck_02_transport_F",50000],
 			["O_MRAP_02_F",750000],
 			["B_Heli_Light_01_F",250000],
+			["C_Heli_Light_01_civil_F",250000],
 			["O_Heli_Light_02_unarmed_F",1000000]
 		];
 		
@@ -96,6 +99,13 @@ switch (_shop) do
 			["B_G_Offroad_01_armed_F",800000]];
 			_return set[count _return,
 			["I_Heli_light_03_unarmed_F",2300000]];
+			
+			_return set[count _return,
+			["O_Heli_Transport_04_bench_F",1333333]];
+			_return set[count _return,
+			["O_Heli_Transport_04_covered_F",1333333]];
+			_return set[count _return,
+			["B_Heli_Transport_03_F",2333333]];
 		};
 	};
 	
@@ -119,6 +129,10 @@ switch (_shop) do
 		{
 			_return set[count _return,["I_MRAP_03_F",80000]];
 		};
+		if(license_cop_sniper) then
+		{
+			_return set[count _return,["B_Quadbike_01_F",2500]];
+		};
 	};
 	
 	case "civ_air":
@@ -126,8 +140,12 @@ switch (_shop) do
 		_return =
 		[
 			["B_Heli_Light_01_F",350000],
+			["C_Heli_Light_01_civil_F",350000],
 			["O_Heli_Light_02_unarmed_F",1000000],
-			["I_Heli_light_03_unarmed_F",2300000]
+			["I_Heli_light_03_unarmed_F",2300000],
+			["O_Heli_Transport_04_bench_F",1333333],
+			["O_Heli_Transport_04_covered_F",1333333],
+			["B_Heli_Transport_03_F",2333333]
 		];
 	};
 	
@@ -136,6 +154,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,["B_Heli_Light_01_F",75000]];
+			//_return set[count _return,["C_Heli_Light_01_civil_F",75000]];
 		};
 		if(__GETC__(life_coplevel) > 5 || license_cop_sniper) then
 		{
@@ -152,6 +171,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,["B_Heli_Light_01_F",75000]];
+			_return set[count _return,["C_Heli_Light_01_civil_F",75000]];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
@@ -206,7 +226,8 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["O_Heli_Light_02_unarmed_F",50000]
+			["O_Heli_Light_02_unarmed_F",50000],
+			["O_Heli_Transport_04_medevac_F",50000]
 		];
 	};
 	
@@ -232,6 +253,7 @@ switch (_shop) do
 			if(playerSide in [east,civilian]) then
 			{
 				_return set[count _return,["B_Heli_Light_01_F",200000]];
+				_return set[count _return,["C_Heli_Light_01_civil_F",200000]];
 				_return set[count _return,["O_Heli_Light_02_unarmed_F",600000]];
 			};
 			if(playerSide == civilian) then
@@ -261,6 +283,7 @@ switch (_shop) do
 				_return set[count _return,["O_Truck_03_covered_F",500000]];
 				_return set[count _return,["O_Truck_03_ammo_F",500000]];
 				_return set[count _return,["O_Truck_03_fuel_F",500000]];
+				_return set[count _return,["B_Heli_Transport_03_unarmed_F",2333333]];
 			};
 			if(playerSide == west) then
 			{
@@ -307,6 +330,7 @@ switch (_shop) do
 			_return set[count _return,["O_Truck_03_fuel_F",500000]];
 			_return set[count _return,["I_Heli_Transport_02_F",1200000]];
 			_return set[count _return,["I_Heli_light_03_unarmed_F",1000000]];
+			_return set[count _return,["B_Heli_Transport_03_unarmed_F",2333333]];
 		};
 	};
 	

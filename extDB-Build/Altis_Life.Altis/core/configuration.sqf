@@ -203,7 +203,8 @@ life_inv_items =
 	"life_inv_cotton",
 	"life_inv_cloth",
 	"life_inv_grape",
-	"life_inv_moonshine"
+	"life_inv_moonshine",
+	"life_inv_redwine"
 	
 	/*
 	"life_inv_cocoa",
@@ -250,6 +251,7 @@ life_licenses =
 	["license_cop_dea","cop"],
 	["license_civ_cloth","civ"],
 	["license_civ_moonshine","civ"],
+	["license_civ_wine","civ"],
 	["license_cop_negotiate","cop"],
 	["license_cop_melee","cop"]
 
@@ -330,6 +332,7 @@ sell_array =
 	["cotton",150],
 	["cloth",1000],
 	["grape",80],
+	["redwine",800],
 	["moonshine",1000]
 	
 	/*
@@ -458,10 +461,11 @@ life_garage_prices =
 	["B_Truck_01_fuel_F",15000],
 	["B_MRAP_01_F",20000],
 	["O_MRAP_02_F",200000],
-	["I_Heli_Transport_02_F",25000],
-	["B_Heli_Light_01_F",20000],
-	["O_Heli_Light_02_unarmed_F",20000],
-	["I_Heli_light_03_unarmed_F",20000],
+	["I_Heli_Transport_02_F",100000],
+	["B_Heli_Light_01_F",50000],
+	["C_Heli_Light_01_civil_F",50000],
+	["O_Heli_Light_02_unarmed_F",75000],
+	["I_Heli_light_03_unarmed_F",75000],
 	["C_Rubberboat",2500],
 	["C_Boat_Civil_01_F",2500],
 	["B_Boat_Transport_01_F",2500],
@@ -472,8 +476,15 @@ life_garage_prices =
 	["O_Truck_03_covered_F",20000],
 	["O_Truck_03_ammo_F",20000],
 	["O_Truck_03_fuel_F",20000],
-	["B_Heli_Transport_01_F",30000],
-	["I_MRAP_03_F",25000]
+	["B_Heli_Transport_01_F",100000],
+	["I_MRAP_03_F",25000],
+	["O_Heli_Transport_04_F",100000],
+	["O_Heli_Transport_04_bench_F",100000],
+	["O_Heli_Transport_04_box_F",100000],
+	["O_Heli_Transport_04_covered_F",100000],
+	["O_Heli_Transport_04_medevac_F",100000],
+	["B_Heli_Transport_03_F",100000],
+	["B_Heli_Transport_03_unarmed_F",100000]
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
@@ -500,6 +511,7 @@ life_garage_sell =
 	["I_MRAP_03_F",10000],
 	["I_Heli_Transport_02_F",125000],
 	["B_Heli_Light_01_F",57000],
+	["C_Heli_Light_01_civil_F",57000],
 	["O_Heli_Light_02_unarmed_F",72500],
 	["I_Heli_light_03_unarmed_F",80000],
 	["C_Rubberboat",950],
@@ -511,7 +523,14 @@ life_garage_sell =
 	["O_Truck_03_device_F",80000],
 	["O_Truck_03_covered_F",80000],
 	["O_Truck_03_ammo_F",80000],
-	["O_Truck_03_fuel_F",80000]
+	["O_Truck_03_fuel_F",80000],
+	["O_Heli_Transport_04_F",125000],
+	["O_Heli_Transport_04_bench_F",125000],
+	["O_Heli_Transport_04_box_F",125000],
+	["O_Heli_Transport_04_covered_F",125000],
+	["O_Heli_Transport_04_medevac_F",125000],
+	["B_Heli_Transport_03_F",125000],
+	["B_Heli_Transport_03_unarmed_F",125000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
 

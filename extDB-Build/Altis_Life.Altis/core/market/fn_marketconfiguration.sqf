@@ -32,7 +32,8 @@ life_market_resources = [
 			["iron_r",2],
 			["copper_r",2],
 			["cement",2],
-			["glass",2] 
+			["glass",2],
+			["cloth",3]
 		] 
 	],
 		
@@ -46,7 +47,8 @@ life_market_resources = [
 			["copper_r",0],
 			["salt_r",0],
 			["cement",0],
-			["glass",0] 
+			["glass",0],
+			["cloth",0]
 		] 
 	],
 	
@@ -60,7 +62,8 @@ life_market_resources = [
 			["copper_r",2],
 			["salt_r",2],
 			["cement",3],
-			["glass",3] 
+			["glass",3],
+			["cloth",3]
 		] 
 	],
 	
@@ -74,7 +77,8 @@ life_market_resources = [
 			["copper_r",2],
 			["salt_r",2],
 			["cement",3],
-			["glass",3] 
+			["glass",3],
+			["cloth",2]
 		] 
 	],
 	
@@ -88,7 +92,8 @@ life_market_resources = [
 			["copper_r",2],
 			["salt_r",2],
 			["cement",3],
-			["glass",3] 
+			["glass",3],
+			["cloth",2]
 		] 
 	],
 	
@@ -102,7 +107,8 @@ life_market_resources = [
 			["copper_r",2],
 			["salt_r",2],
 			["cement",3],
-			["glass",3] 
+			["glass",3],
+			["cloth",2]
 		] 
 	],
 	
@@ -116,7 +122,8 @@ life_market_resources = [
 			["iron_r",2],
 			["salt_r",2],
 			["cement",3],
-			["glass",3] 
+			["glass",3],
+			["cloth",2]
 		] 
 	],
 	
@@ -130,7 +137,8 @@ life_market_resources = [
 			["iron_r",2],
 			["copper_r",2],
 			["cement",3],
-			["glass",3] 
+			["glass",3],
+			["cloth",2]
 		] 
 	],
 	
@@ -144,7 +152,8 @@ life_market_resources = [
 			["iron_r",2],
 			["copper_r",2],
 			["salt_r",2],
-			["cement",2]
+			["cement",2],
+			["cloth",2]
 		] 
 	],
 	
@@ -158,8 +167,41 @@ life_market_resources = [
 			["iron_r",1],
 			["copper_r",1],
 			["salt_r",1],
-			["glass",1]
+			["glass",1],
+			["cloth",2]
 		] 
+	],
+	
+	["cloth", 1200, 800, 2800, 3, 1, 
+		[ 
+			["diamondc",1], 
+			["benzin",1],
+			["chemical",1],
+			["medical",1],
+			["oilp",1],
+			["iron_r",1],
+			["salt_r",2],
+			["copper_r",1],
+			["cement",1],
+			["glass",2]
+		]
+	],
+	
+	["redwine", 1000, 500, 2250, 2, 1, 
+		[ 
+			["diamondc",1], 
+			["benzin",1],
+			["chemical",1],
+			["medical",1],
+			["oilp",1],
+			["iron_r",1],
+			["salt_r",2],
+			["copper_r",1],
+			["cement",1],
+			["glass",2],
+			["cloth",1],
+			["moonshine",1]
+		]
 	],
 	
 	///////////////////////////////////
@@ -169,8 +211,9 @@ life_market_resources = [
 			["marijuana",3], 
 			["cocainep",3],
 			["heroinp",3],
-			["meth",3]
-		] 
+			["meth",3],
+			["moonshine",3]
+		]
 	],
 	
 	["marijuana", 2250, 1500, 3250, 3, 1,   
@@ -178,8 +221,9 @@ life_market_resources = [
 			["turtle",3], 
 			["cocainep",3],
 			["heroinp",3],
-			["meth",3]
-		] 
+			["meth",3],
+			["moonshine",3]
+		]
 	],
 	
 	["cocainep", 3500, 2000, 4800, 3, 1,   
@@ -187,8 +231,9 @@ life_market_resources = [
 			["marijuana",3], 
 			["turtle",3],
 			["heroinp",3],
-			["meth",3]
-		] 
+			["meth",3],
+			["moonshine",3]
+		]
 	],
 	
 	["heroinp", 2850, 1500, 3900, 3, 1,   
@@ -196,7 +241,8 @@ life_market_resources = [
 			["marijuana",3], 
 			["cocainep",3],
 			["turtle",3],
-			["meth",3]
+			["meth",3],
+			["moonshine",3]
 		] 
 	],
 	
@@ -205,7 +251,18 @@ life_market_resources = [
 			["marijuana",3], 
 			["cocainep",3],
 			["heroinp",3],
-			["turtle",3]
+			["turtle",3],
+			["moonshine",3]
+		] 
+	],
+	
+	["moonshine", 1800, 1200, 3800, 4, 1,   
+		[ 
+			["marijuana",3], 
+			["cocainep",3],
+			["heroinp",3],
+			["turtle",3],
+			["redwine",1]
 		] 
 	]
 	

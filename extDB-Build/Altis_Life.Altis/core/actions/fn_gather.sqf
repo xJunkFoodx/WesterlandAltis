@@ -20,6 +20,7 @@ life_action_gathering = true;
 if(_zone == "") exitWith {
 	hint localize "STR_NOTF_notNearResource";
 	life_action_mining_hotkey_inuse = false;
+	life_action_gathering = false;
 };
 
 //Get the resource that will be gathered from the zone name...
@@ -34,7 +35,7 @@ switch(true) do {
 	default {""};
 };
 //gather check??
-if(vehicle player != player) exitWith {hint localize "STR_NOTF_GatherVeh";};
+if(vehicle player != player) exitWith {hint localize "STR_NOTF_GatherVeh";life_action_gathering = false;};
 
 _diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
@@ -53,3 +54,4 @@ if(([true,_gather,_diff] call life_fnc_handleInv)) then
 };
 
 life_action_mining_hotkey_inuse = false;
+life_action_gathering = false;

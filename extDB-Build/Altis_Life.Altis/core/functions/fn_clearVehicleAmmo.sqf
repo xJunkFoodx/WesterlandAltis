@@ -42,6 +42,14 @@ if(_veh == "I_Plane_Fighter_03_CAS_F") then
 	_vehicle removeMagazinesTurret ["2Rnd_AAA_missiles",[0]];
 	_vehicle removeMagazinesTurret ["2Rnd_GBU12_LGB_MI10",[0]];
 };
+if(_veh == "B_Heli_Transport_03_F") then
+{
+	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[0]];
+	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[1]];
+	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[2]];
+	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[3]];
+	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[4]];
+};
 
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;

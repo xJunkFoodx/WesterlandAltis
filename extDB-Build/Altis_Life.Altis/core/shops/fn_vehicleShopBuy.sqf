@@ -97,12 +97,6 @@ switch(playerSide) do {
 		else { [_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate; };
 		_vehicle setVariable["lights",false,true];
 	};
-	
-	case east: {
-		if((life_veh_shop select 2) == "reb" && {_className == "B_Heli_Light_01_F"}) then {
-			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
-		};
-	};
 };
 _vehicle setVariable ["side",_side,true];
 

@@ -49,8 +49,9 @@ switch (_mode) do
 			case "clawyer": {_var = "license_civ_lawyer"};
 			case "sniper":  {_var = "license_cop_sniper"};
 			case "dea":  {_var = "license_cop_dea"};
-			case "cloth_l":  {_var = "license_civ_cloth"};
-			case "moonshine_l":  {_var = "license_civ_moonshine"};
+			case "cloth":  {_var = "license_civ_cloth"};
+			case "moonshine":  {_var = "license_civ_moonshine"};
+			case "redwine": {_var = "license_civ_redwine"};
 			case "negotiate":{_var = "license_cop_negotiate"};
 			case "melee":{_var = "license_cop_melee"};
 			default {_var = ""};
@@ -94,8 +95,9 @@ switch (_mode) do
 			case "license_civ_lawyer":{_var = "clawyer"};
 			case "license_cop_sniper":{_var = "sniper"};
 			case "license_cop_dea":{_var = "dea"};
-			case "license_civ_cloth":{_var = "cloth_l"};
-			case "license_civ_moonshine":{_var = "moonshine_l"};
+			case "license_civ_cloth":{_var = "cloth"};
+			case "license_civ_moonshine":{_var = "moonshine"};
+			case "license_civ_wine":{_var = "wine"};
 			case "license_cop_negotiate":{_var = "negotiate"};
 			case "license_cop_melee":{_var = "melee"};
 			default {_var = ""};

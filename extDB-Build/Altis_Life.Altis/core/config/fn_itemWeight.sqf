@@ -86,6 +86,7 @@ switch (_item) do
 	case "cloth": {4};
 	case "grape": {4};
 	case "moonshine": {2};
+	case "redwine": {2};
 	/*
 	case "cocoa": {2};
 	case "milk": {2};

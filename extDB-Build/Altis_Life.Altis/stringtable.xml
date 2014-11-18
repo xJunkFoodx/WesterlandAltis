@@ -3823,6 +3823,11 @@
 			<English>Moonshine</English>
 			<German>Schnaps</German>
 		</Key>
+		<Key ID="STR_Item_Redwine">
+			<Original>Redwine</Original>
+			<English>Redwine</English>
+			<German>Rotwein</German>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">
@@ -3991,6 +3996,11 @@
 			<Original>Brewing License</Original>
 			<English>Brewing License</English>
 			<German>Braulizenz</German>
+		</Key>
+		<Key ID="STR_License_Wine">
+			<Original>Vintner License</Original>
+			<English>Vintner License</English>
+			<German>Winzer Zulassung</German>
 		</Key>
 		<Key ID="STR_License_Negotiation">
 			<Original>Negotiation Force</Original>
@@ -4460,6 +4470,16 @@
 			<French>Récolte de la Cocaine</French>
 			<Italian>Raccogli Cocaina</Italian>
 			<Portuguese>Colher Cocaina</Portuguese>
+		</Key>
+		<Key ID="STR_Gather_Grapes">
+			<Original>Gather Grapes</Original>
+			<English>Gather Grapes</English>
+			<German>Weintrauben sammeln</German>
+		</Key>
+		<Key ID="STR_Gather_Cotton">
+			<Original>Gather Cotton</Original>
+			<English>Gather Cotton</English>
+			<German>Baumwolle sammeln</German>
 		</Key>
 	</Package>
 	<Package name="Medical_Strings">

@@ -32,4 +32,5 @@ switch (_shop) do
 	case "tools": {["Werkzeuge",["oildrill","shredder","pickaxe"]]};
 	case "cloth": {["Westerland Seide und Stoffe GmbH",["cloth"]]};
 	case "booze": {["Spirituosenhandel",["moonshine"]]};
+	case "redwine": {["Westerlands Winzerei",["redwine"]]};
 };

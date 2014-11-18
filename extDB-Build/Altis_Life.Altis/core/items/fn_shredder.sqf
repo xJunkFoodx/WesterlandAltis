@@ -15,7 +15,11 @@ if(driver _vehicle != player) exitWith {hint localize "STR_NOTF_ShredderDriver";
 
 if(_vehicle getVariable["shredder","stopped"] == "running") exitWith {_vehicle setVariable["shredder","stopped",true];};
 if(_mode == "") exitWith{};
-_resourceZones = ["heroin_1","cocaine_1","weed_1"];
+_resourceZones = ["heroin_1",
+"cocaine_1","cocaine_2",
+"weed_1","weed_2",
+"grape_1",
+"cotton_1"];
 //Find out what zone we're near
 {
 	if(player distance (getMarkerPos _x) < 35) exitWith {_zone = _x;};
@@ -24,8 +28,10 @@ if(_zone == "") exitWith {hint localize "STR_NOTF_notNearResource";};
 
 switch(true) do {
 	case (_zone in ["heroin_1"]): {_gather = "heroinu";};
-	case (_zone in ["cocaine_1"]): {_gather = "cocaine";};
-	case (_zone in ["weed_1"]): {_gather = "cannabis";};
+	case (_zone in ["cocaine_1","cocaine_2"]): {_gather = "cocaine";};
+	case (_zone in ["weed_1","weed_2"]): {_gather = "cannabis";};
+	case (_zone in ["grape_1"]): {_gather = "grape";};
+	case (_zone in ["cotton_1"]): {_gather = "cotton";};
 	default {""};
 };
 
@@ -36,6 +42,8 @@ switch (_mode) do {
 			case "heroinu": {_val = 1;_time = 4;};
 			case "cocaine": {_val = 1;_time = 4;};
 			case "cannabis": {_val = 1;_time = 3;};
+			case "grape": {_val = 2;_time = 3;};
+			case "cotton":{_val = 2;_time = 4;};
 		};
 	};
 	case "shredder1": 
@@ -44,6 +52,8 @@ switch (_mode) do {
 			case "heroinu": {_val = 1;_time = 3;};
 			case "cocaine": {_val = 1;_time = 3;};
 			case "cannabis": {_val = 2;_time = 3;};
+			case "grape": {_val = 3;_time = 3;};
+			case "cotton":{_val = 3;_time = 4;};
 		};
 	};
 	default {_val = 1;_time = 15;};
