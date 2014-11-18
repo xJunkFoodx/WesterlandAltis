@@ -101,7 +101,7 @@ switch(_shop) do
 				["SMG_02_F",nil,8000],
 				["30Rnd_9x21_Mag",nil,250],
 				["muzzle_snds_L",nil,650],
-				["optic_Aco",nil,1500],
+				["optic_Aco",nil,1500]
 			];
 		};
 		if (__GETC__(life_coplevel) >= 4 || license_cop_melee) then {
@@ -175,8 +175,6 @@ switch(_shop) do
 				["B_UAV_01_backpack_F",nil,50000],
 				["B_UavTerminal",nil,50000]
 			];
-		};
-		
 		};
 		if (license_cop_dea) then {
 			_return = _return + 

@@ -155,18 +155,35 @@ life_cratedrop_positions = [
 ];
 life_dealer_positions =
 [
-// Todo positions
+	[dealer_marker_1,[[15011.4,11160.4,0.00140953],309.248]], //Meeresarm
+	[dealer_marker_2,[[17937,8773.14,0.00141907],142]], //darunter
+	[dealer_marker_3,[[20566.1,8885.91,0.315102],265]], //DP 23
+	[dealer_marker_4,[[17531.8,19065.6,4.08283],150.595]], // nördl Hafen
+	[dealer_marker_5,[[9400.46,20319.2,1.95258],123.756]], //Über DP5
+	[dealer_marker_6,[[4059.7,11746.1,3.06422],336.925]], // Neri
+	[dealer_marker_7,[[3563.23,10244.7,3.63839],126.412]], //Knast
+	[dealer_marker_8,[[3492.87,14146,0.00144577],177.525]], //Kavalla Basketballfeld
+	[dealer_marker_9,[[14328.7,17436.4,0.0015583],218.683]], //Athira
+	[dealer_marker_10,[[20894.8,14614.5,0.664073],316.866]] //Sumpf
 ];
 life_dealer_npcs =
-[[dealer1,dealer1_marker],[dealer2,dealer2_marker],[dealer3,dealer3_marker]];
+[dealer_1,dealer_2,dealer_3];
+_announced = false;
 {
-	private ["_dealer","_marker"];
-	_dealer = _x select 0;
-	_marker = _x select 1;
+	private ["_random","_marker","_position","_direction"];
 	_random = life_dealer_positions select ( floor ( random ( count life_dealer_positions)));
-	_dealer setPos [_random select 0,_random select 1,0];
-	_marker setMarkerPos [_random select 0,_random select 1];
-	
+	diag_log _random;
+	_marker = _random select 0;
+	diag_log _marker;
+	_position = _random select 1 select 0;
+	_direction = _random select 1 select 1;
+	_x setPos [_position select 0,_position select 1,_position select 2];
+	_x setDir _direction;
+	if(!_announced) then
+	{
+		_marker setMarkerText "Drogendealer";
+		_announced = true;
+	};
 	life_dealer_positions = life_dealer_positions - [_random];
 }forEach life_dealer_npcs;
 
