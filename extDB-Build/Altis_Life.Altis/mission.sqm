@@ -87590,7 +87590,7 @@ class Mission
 			position[]={15011.4,14.836887,11160.4};
 			name="dealer_marker_1";
 			text="Möglicher Drogendealer";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorOrange";
 		};
 		class Item349
@@ -87598,7 +87598,7 @@ class Mission
 			position[]={17937,34.278458,8773.1396};
 			name="dealer_marker_2";
 			text="Möglicher Drogendealer";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorOrange";
 		};
 		class Item350
@@ -87606,7 +87606,7 @@ class Mission
 			position[]={20566.1,46.478348,8885.9102};
 			name="dealer_marker_3";
 			text="Möglicher Drogendealer";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorOrange";
 		};
 		class Item351
@@ -87614,7 +87614,7 @@ class Mission
 			position[]={17531.801,19.81286,19065.6};
 			name="dealer_marker_4";
 			text="Möglicher Drogendealer";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorOrange";
 		};
 		class Item352
@@ -87622,7 +87622,7 @@ class Mission
 			position[]={9400.46,173.98441,20319.199};
 			name="dealer_marker_5";
 			text="Möglicher Drogendealer";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorOrange";
 		};
 		class Item353
@@ -87630,7 +87630,7 @@ class Mission
 			position[]={4059.7,72.926346,11746.1};
 			name="dealer_marker_6";
 			text="Möglicher Drogendealer";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorOrange";
 		};
 		class Item354
@@ -87638,7 +87638,7 @@ class Mission
 			position[]={3563.23,70.812454,10244.7};
 			name="dealer_marker_7";
 			text="Möglicher Drogendealer";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorOrange";
 		};
 		class Item355
@@ -87646,7 +87646,7 @@ class Mission
 			position[]={3492.8701,0,14146};
 			name="dealer_marker_8";
 			text="Möglicher Drogendealer";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorOrange";
 		};
 		class Item356
@@ -87654,7 +87654,7 @@ class Mission
 			position[]={14328.7,16.925545,17436.4};
 			name="dealer_marker_9";
 			text="Möglicher Drogendealer";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorOrange";
 		};
 		class Item357
@@ -87662,7 +87662,7 @@ class Mission
 			position[]={20894.801,0,14614.5};
 			name="dealer_marker_10";
 			text="Möglicher Drogendealer";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorOrange";
 		};
 	};
