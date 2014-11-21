@@ -6,11 +6,11 @@
 	Allows Medics to heal Players
 */
 private ['_medic', '_player', '_damage'];
-_medic = this select 0;
+_medic = this select 0; // _this    this ist bei initialisierung von Mapobjekten, _this ist die Parameter Variable von Funktionen
 _player = this select 1;
 _damage = _player damage;
 
-if(!(_player iskindof "man")) exitWith{};
+if(!(_player iskindof "man")) exitWith{}; //eventuell mit 'isPlayer' prüfen ob Spieler, sonst könnten NPCs geheilt werden
 if(player distance cursorTarget > 3) exitWith {
 titleText[localize "STR_NOTF_HS_ToFar","PLAIN"]
 };
