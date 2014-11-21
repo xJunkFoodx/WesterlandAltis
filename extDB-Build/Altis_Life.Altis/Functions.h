@@ -291,6 +291,7 @@ class Life_Client_Core
 		class betBuyTicket {};
 		class upgradeTools {};
 		class getNearestSpawnPos {};
+		class healMedic {};
 	};
 	
 	class Network

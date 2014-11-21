@@ -1,5 +1,5 @@
 /*
-	File: fn_healHospital.sqf
+	File: fn_healMedic.sqf
 	Author: DONARfr aka Cheng
 	
 	Description:
@@ -11,7 +11,7 @@ _player = this select 1;
 _damage = _player damage;
 
 if(!(_player iskindof "man")) exitWith{};
-if(player distance cursorTarget > 5) exitWith {
+if(player distance cursorTarget > 3) exitWith {
 titleText[localize "STR_NOTF_HS_ToFar","PLAIN"]
 };
 switch (true) 
@@ -22,8 +22,9 @@ _player setDamage 0;
 }; 
 case (_damage <0.5): {
 titleText ["Behandle", "PLAIN"]; 
+//Kneel over person, lay both hands over body 
+player playMove "AinvPknlMstpSnonWrflDnon_medic";
 sleep 0.7;
-//player playMove "";
 _player setDamage 0;
  }; 
 default { titleText ["Nicht verletzt", "PLAIN"]; };

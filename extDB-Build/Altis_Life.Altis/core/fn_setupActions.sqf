@@ -48,7 +48,7 @@ switch (playerSide) do
 	case independent:
 	{
 		life_actions = life_actions + [player addAction["Pylon einpacken",life_fnc_packuppylon,"",0,false,false,"",' _pylon = nearestObjects[getPos player,["RoadCone_F"],2] select 0; !isNil "_pylon" && (_pylon getVariable "item" == "pylonDeployed")']];
-		life_actions = life_actions + [player addAction["Person heilen",cursorTarget setDamage 0,"",0,false,false,"",'damage cursorTarget >0 && cursorTarget iskindof "man"']];
+		life_actions = life_actions + [player addAction["Person heilen",life_fnc_healHospital,"[player,cursorTarget]",0,false,false,"",'damage cursorTarget >0 && cursorTarget iskindof "man"']];
 		if(player call life_fnc_isADAC) then {
 			life_actions = life_actions + [player addAction["Strassensperre einpacken",life_fnc_packupbarrier,"",0,false,false,"",' _barrier = nearestObjects[getPos player,["RoadBarrier_F"],2] select 0;!isNil "_barrier" && (_barrier getVariable "item" == "barrierDeployed")']];
 		};
