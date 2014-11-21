@@ -12,11 +12,6 @@ _action = [
 
 if(_action) then {
 	if(life_atmcash < 125000) exitWith {hint localize "STR_NOTF_NotEnoughFunds";}; 
-	if (life_atmcash >= 125000) then 
-	{
-		life_atmcash = life_atmcash - 125000;
-		[] call SOCK_fnc_updateRequest; //Silent Sync
-	};
 	_dealers = [dealer_1,dealer_2,dealer_3];
 	{
 		private ["_marker","_error"];
@@ -26,9 +21,12 @@ if(_action) then {
 		_marker setMarkerTextLocal "Drogendealer";
 	}forEach _dealers;
 	
-	if(_error) then {
-		life_atmcash = life_atmcash + 125000;
-		[] call SOCK_fnc_updateRequest; //Silent Sync	
+	if(!_error) then {
+		if (life_atmcash >= 125000) then 
+			{
+			life_atmcash = life_atmcash - 125000;
+			[] call SOCK_fnc_updateRequest; //Silent Sync
+		};
 	};
 	closeDialog 0;
 } else {
