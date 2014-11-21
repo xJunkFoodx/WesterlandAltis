@@ -292,6 +292,7 @@ class Life_Client_Core
 		class upgradeTools {};
 		class getNearestSpawnPos {};
 		class revealDealers {};
+		class healMedic {};
 	};
 	
 	class Network
