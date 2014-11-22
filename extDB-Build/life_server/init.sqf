@@ -103,7 +103,7 @@ life_side_players = [];
 		sleep (30 * 60);
 		{
 			_x setVariable["sellers",[],true];
-		} foreach [Dealer_1,Dealer_2,Dealer_3];
+		} foreach [dealer_1,dealer_2,dealer_3];
 	};
 };
 
@@ -172,9 +172,9 @@ _announced = false;
 {
 	private ["_random","_marker","_position","_direction"];
 	_random = life_dealer_positions select ( floor ( random ( count life_dealer_positions)));
+	_marker = _random select 0;
 	if(!_announced) then
 	{
-		_marker = _random select 0;
 		_marker setMarkerText "Drogendealer";
 		_announced = true;
 	};
@@ -182,6 +182,7 @@ _announced = false;
 	_direction = _random select 1 select 1;
 	_x setPos [_position select 0,_position select 1,_position select 2];
 	_x setDir _direction;
+	_x setVariable ["marker",_marker,TRUE];
 	life_dealer_positions = life_dealer_positions - [_random];
 }forEach life_dealer_npcs;
 
