@@ -180,6 +180,14 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "C_Heli_Light_01_civil_F":
+	{
+		switch(_index) do
+		{
+			case 0: {_color = "Polizei"};
+		};
+	};
+	
 	case "O_Heli_Light_02_unarmed_F":
 	{
 		switch (_index) do

@@ -154,7 +154,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,["B_Heli_Light_01_F",75000]];
-			//_return set[count _return,["C_Heli_Light_01_civil_F",75000]];
+			_return set[count _return,["C_Heli_Light_01_civil_F",75000]];
 		};
 		if(__GETC__(life_coplevel) > 5 || license_cop_sniper) then
 		{

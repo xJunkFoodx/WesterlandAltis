@@ -167,7 +167,13 @@ switch (_vehicle) do
 			
 		];
 	};
-	
+	case "C_Heli_Light_01_civil_F":
+	{
+		_ret =
+		[
+			["textures\vehicles\heli_light_01_polizei.paa","cop"]
+		];
+	};
 	case "O_Heli_Light_02_unarmed_F":
 	{
 		_ret = 

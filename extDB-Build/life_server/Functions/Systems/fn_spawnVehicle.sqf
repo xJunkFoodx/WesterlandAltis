@@ -102,7 +102,7 @@ if (_vehicle isKindOf "Air") then {
 [_vehicle] call life_fnc_clearVehicleAmmo;
 
 //Sets of animations
-if((_vInfo select 1) == "civ" && (_vInfo select 2) == "B_Heli_Light_01_F" && _vInfo select 8 != 13) then
+if((_vInfo select 1) == "civ" && (_vInfo select 2) in ["B_Heli_Light_01_F","C_Heli_Light_01_civil_F"] && _vInfo select 8 != 13) then
 {
 	[[_vehicle,"civ_littlebird",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 };
