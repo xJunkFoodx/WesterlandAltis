@@ -12,12 +12,11 @@ _action = [
 
 if(_action) then {
 	if(life_atmcash < 125000) exitWith {hint localize "STR_NOTF_NotEnoughFunds";}; 
+	_error = false;
 	_dealers = [dealer_1,dealer_2,dealer_3];
 	{
-		private ["_marker","_error"];
-		_error = false;
-		_marker = _x getVariable ["marker",objNull];
-		if(isNull _marker) exitWith {_error = true;};
+		_marker = _x getVariable ["marker",""];
+		if(_marker == "") exitWith {_error = true;};
 		_marker setMarkerTextLocal "Drogendealer";
 	}forEach _dealers;
 	
