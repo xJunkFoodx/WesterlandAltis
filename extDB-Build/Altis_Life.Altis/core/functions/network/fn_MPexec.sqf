@@ -1,4 +1,3 @@
-#include <macro.h>
 /*
 	Author: Karel Moricky
 	Modified by Tonic for function white-listing.
