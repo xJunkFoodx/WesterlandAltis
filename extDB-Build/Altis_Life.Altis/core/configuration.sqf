@@ -251,7 +251,7 @@ life_licenses =
 	["license_cop_dea","cop"],
 	["license_civ_cloth","civ"],
 	["license_civ_moonshine","civ"],
-	["license_civ_wine","civ"],
+	["license_civ_redwine","civ"],
 	["license_cop_negotiate","cop"],
 	["license_cop_melee","cop"]
 
@@ -391,7 +391,12 @@ buy_array =
 	["shredder",160000],
 	["shredder1",700000],
 	["zipties",30000],
-	["blindbag",100000]
+	["blindbag",100000],
+	["cotton",300],
+	["cloth",2000],
+	["grape",160],
+	["redwine",1600],
+	["moonshine",2000]
 ];
 __CONST__(buy_array,buy_array);
 

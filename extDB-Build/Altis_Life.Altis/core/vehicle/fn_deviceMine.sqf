@@ -31,8 +31,8 @@ switch(true) do { // 27 secs per interval = ~5 times slower than normal mining/g
 	case (_zone in ["apple_1","apple_2","apple_3","apple_4"]): {_item ="apple"; _amount = 15;};
 	case (_zone in ["peaches_1","peaches_2","peaches_3","peaches_4"]): {_item="peach"; _amount = 15;};
 	case (_zone in ["heroin_1"]): {_item = "heroinu"; _amount = 5;};
-	case (_zone in ["cocaine_1"]): {_item = "cocaine"; _amount = 5;};
-	case (_zone in ["weed_1"]): {_item = "cannabis"; _amount = 5;};
+	case (_zone in ["cocaine_1","cocaine_2"]): {_item = "cocaine"; _amount = 5;};
+	case (_zone in ["weed_1","weed_2"]): {_item = "cannabis"; _amount = 5;};
 	case (_zone in ["lead_1"]): {_item = "copperore"; _amount = 10;};
 	case (_zone in ["iron_1"]): {_item = "ironore"; _amount = 10;};
 	case (_zone in ["salt_1"]): {_item = "salt"; _amount = 20;};
@@ -40,6 +40,8 @@ switch(true) do { // 27 secs per interval = ~5 times slower than normal mining/g
 	case (_zone in ["diamond_1"]): {_item = "diamond"; _amount = 5;};
 	case (_zone in ["oil_1","oil_2"]): {_item = "oilu"; _amount = 5;};
 	case (_zone in ["rock_1"]): {_item = "rock"; _amount = 10;};
+	case (_zone in ["cotton_1"]): {_item = "cotton"; _val = 10;};
+	case (_zone in ["grape_1"]): {_item = "grape"; _val = 15;};
 	default {""};
 };
 

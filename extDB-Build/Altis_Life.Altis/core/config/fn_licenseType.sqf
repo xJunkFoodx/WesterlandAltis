@@ -97,7 +97,7 @@ switch (_mode) do
 			case "license_cop_dea":{_var = "dea"};
 			case "license_civ_cloth":{_var = "cloth"};
 			case "license_civ_moonshine":{_var = "moonshine"};
-			case "license_civ_wine":{_var = "wine"};
+			case "license_civ_redwine":{_var = "redwine"};
 			case "license_cop_negotiate":{_var = "negotiate"};
 			case "license_cop_melee":{_var = "melee"};
 			default {_var = ""};

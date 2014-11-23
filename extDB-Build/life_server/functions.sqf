@@ -330,7 +330,7 @@ compileFinal "
 		_this attachTo [_para, [0,0,-0.9]];
 		{ 
 			_p = createVehicle [_class, [0,0,0], [], 0, ""FLY""];
-			_paras set [count _paras, _p];
+			_paras pushBack _p;
 			_p attachTo [_para, [0,0,0]];
 			_p setVectorUp _x;
 		} count [ [0.5,0.4,0.6],[-0.5,0.4,0.6],[0.5,-0.4,0.6],[-0.5,-0.4,0.6] ];

@@ -87454,7 +87454,7 @@ class Mission
 		class Item315
 		{
 			position[]={14645.847,-0.13661587,12334.793};
-			name="oil_3";
+			name="oil_1";
 			text="Oehlbohrinsel";
 			type="mil_triangle";
 			colorName="ColorBrown";
@@ -87924,6 +87924,7 @@ class Mission
 			name="dealer_revealer_marker";
 			text="Zwielichtige Gestalt";
 			type="mil_dot";
+			colorName="ColorOrange";
 		};
 	};
 	class Sensors

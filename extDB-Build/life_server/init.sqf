@@ -171,7 +171,8 @@ life_dealer_npcs =
 _announced = false;
 {
 	private ["_random","_marker","_position","_direction"];
-	_random = life_dealer_positions select ( floor ( random ( count life_dealer_positions)));
+	_randomInt = ( floor ( random ( count life_dealer_positions)));
+	_random = life_dealer_positions select _randomInt;
 	_marker = _random select 0;
 	if(!_announced) then
 	{
@@ -183,7 +184,7 @@ _announced = false;
 	_x setPos [_position select 0,_position select 1,_position select 2];
 	_x setDir _direction;
 	_x setVariable ["marker",_marker,TRUE];
-	life_dealer_positions = life_dealer_positions - [_random];
+	life_dealer_positions deleteAt _randomInt;
 }forEach life_dealer_npcs;
 
 [] spawn TON_fnc_spawnParadrop;

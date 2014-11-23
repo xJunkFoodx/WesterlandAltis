@@ -169,9 +169,26 @@ switch (_vehicle) do
 	};
 	case "C_Heli_Light_01_civil_F":
 	{
-		_ret =
+		_ret = 
 		[
-			["textures\vehicles\heli_light_01_polizei.paa","cop"]
+			["textures\vehicles\heli_light_01_polizei.paa","cop"],
+			/*["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","cop"],*/
+			["textures\vehicles\heli_light_01_polizei.paa","cop"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","reb"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_blueline_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_elliptical_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_furious_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_jeans_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_speedy_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sunset_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","civ"],
+			["textures\vehicles\heli_light_01_weed.paa","civ"]
+			
 		];
 	};
 	case "O_Heli_Light_02_unarmed_F":

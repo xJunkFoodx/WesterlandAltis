@@ -5,14 +5,14 @@
 	Description:
 	Handles various different ammo types being fired.
 */
-private["_ammoType","_projectile","_weapon","_restricted"];
+private["_ammoType","_projectile","_weapon","_restricted";
 _ammoType = _this select 4; 
 _weapon = _this select 1;
 _projectile = _this select 6;
 
 if(_ammoType == "GrenadeHand_stone") then {
 	_projectile spawn {
-		private["_position"];
+		private["_position";
 		while {!isNull _this} do {
 			_position = getPosATL _this;
 			sleep 0.1;
@@ -34,36 +34,36 @@ switch (__GETC__(life_donator)) do
 {
 	case 0: 
 	{
-		_restricted set [count _restricted,"arifle_Mk20C_plain_F"];
-		_restricted set [count _restricted,"LMG_Mk200_F"];
-		_restricted set [count _restricted,"arifle_TRG21_F"];
+		_restricted pushBack "arifle_Mk20C_plain_F";
+		_restricted pushBack "LMG_Mk200_F";
+		_restricted pushBack "arifle_TRG21_F";
 		if(!license_cop_dea) then{
-		_restricted set [count _restricted,"hgun_pistol_heavy_01_F"];};
+		_restricted pushBack "hgun_pistol_heavy_01_F";};
 	};
 	case 1: 
 	{
-		_restricted set [count _restricted,"arifle_Mk20C_plain_F"];
-		_restricted set [count _restricted,"LMG_Mk200_F"];
-		_restricted set [count _restricted,"arifle_TRG21_F"];
+		_restricted pushBack "arifle_Mk20C_plain_F";
+		_restricted pushBack "LMG_Mk200_F";
+		_restricted pushBack "arifle_TRG21_F";
 		if(!license_cop_dea) then{
-		_restricted set [count _restricted,"hgun_pistol_heavy_01_F"];};
+		_restricted pushBack "hgun_pistol_heavy_01_F";};
 	};
 	case 2:
 	{
-		_restricted set [count _restricted,"arifle_Mk20C_plain_F"];
-		_restricted set [count _restricted,"LMG_Mk200_F"];
-		_restricted set [count _restricted,"arifle_TRG21_F"];
+		_restricted pushBack "arifle_Mk20C_plain_F";
+		_restricted pushBack "LMG_Mk200_F";
+		_restricted pushBack "arifle_TRG21_F";
 		if(!license_cop_dea) then{
-		_restricted set [count _restricted,"hgun_pistol_heavy_01_F"];};
+		_restricted pushBack "hgun_pistol_heavy_01_F";};
 	};
 	case 3: {};
 	default
 	{
-		_restricted set [count _restricted,"arifle_Mk20C_plain_F"];
-		_restricted set [count _restricted,"LMG_Mk200_F"];
-		_restricted set [count _restricted,"arifle_TRG21_F"];
+		_restricted pushBack "arifle_Mk20C_plain_F";
+		_restricted pushBack "LMG_Mk200_F";
+		_restricted pushBack "arifle_TRG21_F";
 		if(!license_cop_dea) then{
-		_restricted set [count _restricted,"hgun_pistol_heavy_01_F"];};
+		_restricted pushBack "hgun_pistol_heavy_01_F";};
 	};
 };
 
