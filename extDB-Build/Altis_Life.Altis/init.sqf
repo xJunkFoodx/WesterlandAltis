@@ -42,7 +42,7 @@ if (thirdPartyScripts) then {
 if (isServer) then {
 	null = [5, "scripts"] execVM "scripts\helipad_lights\helipad_light_auto.sqf";	
 };
-
+[] execVM "core\config\fn_removedBuildings.sqf";
 [] execVM "scripts\zlt_fastrope.sqf";
 [] execVM "scripts\stopsidechat.sqf";
 [] execVM "scripts\D41_wetter.sqf";
