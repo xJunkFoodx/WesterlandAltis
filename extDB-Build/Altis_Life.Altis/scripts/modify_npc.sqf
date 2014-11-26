@@ -13,5 +13,6 @@ _unit unassignItem "NVGoggles_INDEP";
  removeVest _unit;
  removeBackpack _unit;
  removeAllWeapons _unit;
+ _unit switchmove "";
  _unit enableSimulation false;
 _unit allowDamage false;
