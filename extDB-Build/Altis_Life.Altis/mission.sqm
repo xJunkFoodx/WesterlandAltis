@@ -3435,7 +3435,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_4_F";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this setVariable[""realname"",""Markt""]; this addAction[""Kantiene"",life_fnc_virt_menu,""market""];";
+					init="this allowDamage false; this enableSimulation false; this setVariable[""realname"",""Markt""]; this addAction[""Kantine"",life_fnc_virt_menu,""kantine""];";
 				};
 				class Item134
 				{
