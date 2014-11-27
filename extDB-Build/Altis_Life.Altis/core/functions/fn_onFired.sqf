@@ -5,14 +5,14 @@
 	Description:
 	Handles various different ammo types being fired.
 */
-private["_ammoType","_projectile","_weapon","_restricted";
+private["_ammoType","_projectile","_weapon","_restricted"];
 _ammoType = _this select 4; 
 _weapon = _this select 1;
 _projectile = _this select 6;
 
 if(_ammoType == "GrenadeHand_stone") then {
 	_projectile spawn {
-		private["_position";
+		private["_position"];
 		while {!isNull _this} do {
 			_position = getPosATL _this;
 			sleep 0.1;

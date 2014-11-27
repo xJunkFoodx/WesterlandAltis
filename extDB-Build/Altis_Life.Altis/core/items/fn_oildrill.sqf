@@ -25,6 +25,8 @@ if(isNull _generator) exitWith {life_oildrill = ObjNull;};
 detach _barrel;
 _barrel setPos [(getPos _barrel select 0),(getPos _barrel select 1),0];
 _generator setPos [(getPos _generator select 0),(getPos _generator select 1),0];
+_barrel setVectorUp [0,0,1];
+_generator setVectorUp [0,0,1];
 if( (player distance (getMarkerPos "oil_1") > 40) && (player distance getMarkerPos "oil_2" > 40) ) exitWith 
 {
 	hint localize "STR_NOTF_notNearResource";

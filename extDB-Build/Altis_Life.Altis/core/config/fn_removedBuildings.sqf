@@ -12,7 +12,18 @@ _remove =
 ];
 
 {
-hideObjectGlobal nearestBuilding _x;
-_x allowDamage false;
-_x enableSimulation false;
+_building = nearestBuilding _x;
+hideObjectGlobal _building;
+_building allowDamage false;
+_building enableSimulation false;
 }forEach _remove;
+
+//Invulnerable
+_inv=
+[
+[16042.4,16955.6,0.00146294] // Zentralbank
+];
+{
+	_building = nearestBuilding _x;
+	_building allowDamage false;
+}forEach _inv;
