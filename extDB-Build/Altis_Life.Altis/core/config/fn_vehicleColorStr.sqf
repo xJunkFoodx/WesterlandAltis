@@ -285,7 +285,7 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Ion"};
 			case 1: {_color = "Dahoman"};
-			case 2: {_color = "Braun"};
+			case 2: {_color = "Presidenten Blau"};
 			case 3: {_color = "RageCore"};
 			case 4: {_color = "Camo"};
 			case 5: {_color = "Rebel"};

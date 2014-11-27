@@ -92,6 +92,11 @@ if (player call life_fnc_isADAC) then {
 	(_BtnArray select _select) buttonSetAction "closeDialog 0; [] spawn life_fnc_adacRepaintMenu;";
 	(_BtnArray select _select) ctrlShow true;
 	_select = _select +1;
+	
+	(_BtnArray select _select) ctrlSetText localize "STR_vInAct_Registration";
+	(_BtnArray select _select) buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
+	(_BtnArray select _select) ctrlShow true;
+	_select = _select +1;
 };
 
 if(playerSide == east) then {

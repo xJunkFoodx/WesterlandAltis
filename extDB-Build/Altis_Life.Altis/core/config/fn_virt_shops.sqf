@@ -11,6 +11,7 @@ _shop = _this select 0;
 switch (_shop) do
 {
 	case "market": {["Altis Market",["smartphone","beer","blackbeer","vodca","wine","sekt","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","storagesmall","storagebig"]]};
+	case "kanine": {["Kanine",["water","apple","peach","donuts","coffee","tbacon","rabbit"]]};
 	case "rebel": {
 		_return =["Rebel Market",["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","zipties","blindbag"]];
 		if(playerSide in [east]) then
