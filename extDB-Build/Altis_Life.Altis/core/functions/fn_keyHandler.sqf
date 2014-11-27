@@ -395,6 +395,15 @@ switch (_code) do
 			[] call life_fnc_wantedMenu;
 		};
 	};
+	//F3
+	case 61:
+	{
+		if(!life_action_inUse) then
+		{
+			//Situps
+			player playmove "AmovPercMstpSnonWnonDnon_exercisePushup";
+		};
+	};
 };
 
 _handled;
