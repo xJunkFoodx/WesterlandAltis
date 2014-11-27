@@ -45,6 +45,9 @@ _vehicle spawn
 	if(_this isKindOf "House_F") then {
 		[[_this],"TON_fnc_updateHouseTrunk",false,false] spawn life_fnc_MP;
 	};
+	if(_this isKindOf "Car" OR _this isKindOf "Air" OR _this isKindOf "Ship") then {
+		[[_this],"TON_fnc_updateVehicleTrunk",false,false] spawn life_fnc_MP;
+	};
 };
 
 _vehicle spawn {

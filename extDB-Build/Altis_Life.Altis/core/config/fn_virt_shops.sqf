@@ -11,7 +11,15 @@ _shop = _this select 0;
 switch (_shop) do
 {
 	case "market": {["Altis Market",["smartphone","beer","blackbeer","vodca","wine","sekt","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","storagesmall","storagebig"]]};
-	case "rebel": {["Rebel Market",["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","zipties","blindbag"]]};
+	case "rebel": {
+		_return =["Rebel Market",["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","zipties","blindbag"]];
+		if(playerSide in [east]) then
+		{
+			_return = [_return select 0,(_return select 1) pushBack "zipties"];
+			_return = [_return select 0,(_return select 1) pushBack "blindbag"];
+		};
+		_return
+		};
 	case "gang": {["Gang Market", ["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Essen auf Raedern",["turtlesoup","turtle"]]};
 	case "coffee": {["Stratis Kaffee",["coffee","donuts"]]};
