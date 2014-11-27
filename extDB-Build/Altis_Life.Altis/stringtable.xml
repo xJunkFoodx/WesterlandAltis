@@ -4854,6 +4854,11 @@
 			<English>Withdraw From Gang</English>
 			<German>Von Gang-Konto abheben</German>
 		</Key>
+		<Key ID="STR_pInAct_giveKeys">
+			<Original>Erhalte Schuessel</Original>
+			<English>Get Keys</English>
+			<German>Erhalte Schuessel</German>
+		</Key>
 	</Package>
 		<Package name="Vehicle_Interaction">
 		<Key ID="STR_vInAct_Title">
