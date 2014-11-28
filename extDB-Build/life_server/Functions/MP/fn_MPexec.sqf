@@ -24,7 +24,7 @@ _target =	[_varValue,3,true,[objnull,true,0,[],sideUnknown,grpnull,""]] call bis
 _isPersistent =	[_varValue,4,false,[false]] call bis_fnc_param;
 _isCall =	[_varValue,5,false,[false]] call bis_fnc_param;
 
-_validFunctions = ["bis_fnc_execvm","bis_fnc_effectkilledairdestruction","bis_fnc_effectkilledairdestructionstage2","bis_fnc_spawn"]; //Only these functions can be passed via BIS_fnc_MP
+_validFunctions = ["bis_fnc_execvm","bis_fnc_effectkilledairdestruction","bis_fnc_effectkilledairdestructionstage2","bis_fnc_spawn","ghb_fnc_handlemessages"]; //Only these functions can be passed via BIS_fnc_MP
 if(!(toLower(_functionName) in _validFunctions)) exitWith {false}; //NO.
 if(_functionName == "bis_fnc_execvm") then {
 	_param2 = _params select 1;

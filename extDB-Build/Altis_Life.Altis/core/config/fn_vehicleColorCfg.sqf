@@ -39,7 +39,7 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			[_path + "hatchback_01_ext_base09_co.paa","cop"],
-			["textures\vehicles\police\hatchback_police.jpg","cop"]
+			["textures\vehicles\police\polizei_HATCHBACK.jpg","cop"]
 		];
 	};
 		
@@ -145,8 +145,6 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\police\polizei_HUMMINGBIRD.paa","cop"],
-			/*["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","cop"],*/
 			["textures\vehicles\police\polizei_HUMMINGBIRD.paa","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
