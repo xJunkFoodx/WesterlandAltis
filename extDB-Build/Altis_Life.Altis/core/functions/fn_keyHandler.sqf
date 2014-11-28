@@ -400,8 +400,25 @@ switch (_code) do
 	{
 		if(!life_action_inUse) then
 		{
-			//Situps
+			//Liegestuetze
 			player playmove "AmovPercMstpSnonWnonDnon_exercisePushup";
+		};
+	};
+	//F4
+	case 62:
+	{
+		if(!life_action_inUse) then
+		{
+			//Kniebeuge
+			player playmove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
+		};
+	};	//F5
+	case 62:
+	{
+		if(!life_action_inUse) then
+		{
+			//Karate
+			player playmove "AmovPercMstpSnonWnonDnon_exerciseKata";
 		};
 	};
 };
