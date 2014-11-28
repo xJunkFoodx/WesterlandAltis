@@ -138,7 +138,7 @@ switch(_shop) do
 			];
 		};
 		
-		if (__GETC__(life_coplevel) >= 7 || license_cop_sniper) then {
+		if (__GETC__(life_coplevel) >= 7 || license_cop_sniper || life_cop_dea ) then {
 			_return = _return + 
 			[
 				["rangefinder",nil,1000]
