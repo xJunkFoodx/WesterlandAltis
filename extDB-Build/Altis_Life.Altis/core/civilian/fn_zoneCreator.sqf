@@ -113,6 +113,6 @@ _cottonZones = ["cotton_1"];
 	_zoneReb = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zoneReb setTriggerArea[25,25,0,false];
 	_zoneReb setTriggerActivation["EAST","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Cotton = player addAction[(localize ""STR_Gather_Cotton""),life_fnc_gather,'',0,false,false,'','!life_action_mining_hotkey_inuse'];","player removeAction LIFE_Action_Cotton;"];
+	_zoneReb setTriggerStatements["player in thislist","LIFE_Action_Cotton = player addAction[(localize ""STR_Gather_Cotton""),life_fnc_gather,'',0,false,false,'','!life_action_mining_hotkey_inuse'];","player removeAction LIFE_Action_Cotton;"];
 
 } foreach _cottonZones;

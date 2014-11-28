@@ -12,6 +12,13 @@ _zone = "";
 
 if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
 life_action_gathering = true;
+[] spawn {
+	private ["_time"];
+	_time = time;
+	waitUntil{time - _time >= 8};
+	life_action_gathering = false;
+	hint "Fehler beim Abbauen. Du kannst nun erneut abbauen.";
+};
 //Find out what zone we're near
 {
 	if(player distance (getMarkerPos _x) < 100) exitWith {_zone = _x;}; // Range is limited by the distance in which the action is shown (zoneCreator), so no need to hardcode limit it to 30 here. Raised the limit to fit the distances in zoneCreator but should probably be removed sometime
