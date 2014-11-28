@@ -16,8 +16,8 @@ switch (_shop) do
 		_return =["Rebel Market",["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]];
 		if(playerSide in [east]) then
 		{
-			_return = [_return select 0,(_return select 1) pushBack "zipties"];
-			_return = [_return select 0,(_return select 1) pushBack "blindbag"];
+			(_return select 1) pushBack "zipties";
+			(_return select 1) pushBack "blindbag";
 		};
 		_return
 		};
