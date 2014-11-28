@@ -19,17 +19,21 @@ if(playerSide != west) exitWith
 //Set rank
 switch (__GETC__(life_coplevel)) do
 {
-	case 1: { _rank = "Rekrut"; };
-	case 2: { _rank = "Beamter"; };
-	case 3: { _rank = "Polizeimeister"; };
-	case 4: { _rank = "Polizei Hauptmeister"; };
-	case 5: { _rank = "Kommissar"; };
-	case 6: { _rank = "Nicht erlaubter Rang"; };
-	case 7: { _rank = "Polizeipräsident";};
+	case 1: { _rank = "Anwärter"; };
+	case 2: { _rank = "Rekrut"; };
+	case 3: { _rank = "Beamter"; };
+	case 4: { _rank = "Meister"; };
+	case 5: { _rank = "Obermeister"; };
+	case 6: { _rank = "Hauptmeister"; };
+	case 7: { _rank = "Kommissar";};
+	case 8: { _rank = "Oberkommissar";};
+	case 9: { _rank = "Hauptkommissar";};
+	case 10: { _rank = "Polizeipräsident";};
+	
 	default {_rank =  "Ungültiger Rang";};
 };
 if (license_cop_dea) then { _rank = "DEA Beamter"; };
-if (__GETC__(life_adminlevel) > 0 && (__GETC__(life_coplevel) == 7)) then { _rank = "N.S.A. Beamter"; };
+if (__GETC__(life_adminlevel) > 0 && (__GETC__(life_coplevel) == 10)) then { _rank = "N.S.A. Beamter"; };
 
 
 //Compose message

@@ -172,6 +172,7 @@ class Life_Client_Core
 		class adacMarkers {};
 		class distressMenu {};
 		class adacLights {};
+		class adacCarKey {};
 	};
 	
 	class Config

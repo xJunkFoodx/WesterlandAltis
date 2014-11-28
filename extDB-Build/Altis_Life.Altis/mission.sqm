@@ -3596,7 +3596,7 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.60000002;
-					init="null=[this] execVM ""scripts\modify_npc.sqf"";this addAction[""ADAC Auto"",life_fnc_vehicleShopMenu,[""adac_shop"",independent,""adac_car_2"",""adac"",""Kavala Hosptial""],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this addAction[""ADAC Hubschrauber"",life_fnc_vehicleShopMenu,[""adac_air_hs"",independent,""adac_air_2"",""adac"",""Kavala Hosptial"",true],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this setObjectTexture [0,""textures\uniform\adac.paa""];";
+					init="null=[this] execVM ""scripts\modify_npc.sqf"";this addAction[""ADAC Auto"",life_fnc_vehicleShopMenu,[""adac_shop"",independent,""adac_car_2"",""adac"",""ADAC Basis"",true],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this addAction[""ADAC Hubschrauber"",life_fnc_vehicleShopMenu,[""adac_air_hs"",independent,""adac_air_2"",""adac"",""ADAC Basis"",true],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this setObjectTexture [0,""textures\uniform\adac.paa""];";
 				};
 			};
 		};
@@ -5963,7 +5963,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={21766.6,0,7745.3398};
+					position[]={20174.893,43.377651,7552.167};
 					azimut=160.07401;
 					offsetY=0.00143719;
 					special="NONE";
@@ -70130,7 +70130,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false;  this addAction[""Notarzt Auto"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_2"",""med"",""Kavala Hosptial""],0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)'];this addAction[""Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;      createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""lädt Fahrzeuge....""];       life_garage_sp = ""med_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent']; this addAction[""Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == independent'];";
+			init="this allowDamage false;  this addAction[""ADAC Auto"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""adac_car_2"",""adac"",""Kavala Hosptial""],0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)'];this addAction[""Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;      createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""lädt Fahrzeuge....""];       life_garage_sp = ""adac_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent']; this addAction[""Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == independent'];";
 		};
 		class Item5655
 		{
@@ -88229,7 +88229,7 @@ class Mission
 		};
 		class Item364
 		{
-			position[]={21766.6,13.670227,7745.3398};
+			position[]={20174.893,43.377651,7552.167};
 			name="cloth_processing_marker_1";
 			text="Schneiderei";
 			type="mil_box";

@@ -180,6 +180,11 @@
 		<Key ID="STR_Admin_Revive">
 			<Original>Beleben</Original>
 		</Key>
+		<Key ID="STR_Admin_GettingKeys">
+			<Original>Öffne Schloss</Original>
+			<English>Opening Lock</English>
+			<German>Öffne Schloss</German>
+		</Key>
 	</Package>
 	<Package name="Admin_Notifications">
 		<Key ID="STR_ANOTF_Query">
