@@ -89,7 +89,7 @@ switch(playerSide) do {
 		life_houses = _this select 12;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
-			life_vehicles set[count life_vehicles,_house];
+			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
 		life_gangData = _This select 13;
