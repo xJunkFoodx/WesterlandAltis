@@ -16,7 +16,7 @@ if(playerSide == west) then {
 		
 		case "U_B_CombatUniform_mcam" : { 
 			_path = "textures\uniform\polizei_rang3.paa";
-			if (license_cop_dea) then { _path = "textures\uniform\polizei_dea.paa"; };
+			if (license_cop_dea) then { _path = "textures\uniform\dea_SKIN.paa"; };
 			_unit setObjectTextureGlobal [0,_path];
 		};
 		
@@ -32,7 +32,7 @@ if(playerSide == west) then {
 	};
 	
 	if((backpack _unit) == "B_Bergen_sgg" && license_cop_dea) then {
-		(unitBackpack _unit) setObjectTextureGlobal [0, "textures\backpack_dea_bergen.paa"];
+		(unitBackpack _unit) setObjectTextureGlobal [0, "textures\dea_BACK.paa"];
 	};
 	
 	// Hide backpack

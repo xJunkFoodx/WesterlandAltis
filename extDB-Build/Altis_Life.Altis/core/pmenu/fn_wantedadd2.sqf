@@ -196,162 +196,172 @@ _data = "33";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Verursachter Personenschaden $200.000";
+_text = "Personenschaden - Unfall $50.000";
 _data = "34";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Schweben über Siedlung unter 150m $10.000";
+_text = "Personenschaden - Waffen $100.000";
 _data = "35";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Landen innerhalb 500m zur Siedlung $10.000";
+_text = "Fliegen über Siedlung unter 150m $10.000";
 _data = "36";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Landen auf Straßen $15.000";
+_text = "Landen innerhalb 500m zur Siedlung $10.000";
 _data = "37";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Landen in gesperrten Gebieten $30.000";
+_text = "Landen auf Straßen $15.000";
 _data = "38";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Heli-Flucht Unterstützung $20.000";
+_text = "Landen in gesperrten Gebieten $30.000";
 _data = "39";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Fliegen ohne Kollisionsleuchten $5.000";
+_text = "Heli-Flucht Unterstützung $20.000";
 _data = "40";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Fliegen ohne Lizens $10.000";
+_text = "Fliegen ohne Kollisionsleuchten $5.000";
 _data = "41";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Kein Sanikasten im Fahrzeug $250";
+_text = "Fliegen ohne Lizens $10.000";
 _data = "42";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Kein Werkzeugkasten im Fahrzeug $250";
+_text = "Kein Sanikasten im Fahrzeug $250";
 _data = "43";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Innerorts über 50km/h $1.500";
+_text = "Kein Werkzeugkasten im Fahrzeug $250";
 _data = "44";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Innerorts über 60km/h $3.000";
+_text = "Innerorts über 50km/h $1.500";
 _data = "45";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Innerorts über 85km/h $7.000";
+_text = "Innerorts über 60km/h $3.000";
 _data = "46";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Innerorts über 110km/h $25.000";
+_text = "Innerorts über 85km/h $7.000";
 _data = "47";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Innerorts über 200km/h $60.000";
+_text = "Innerorts über 110km/h $25.000";
 _data = "48";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Außerorts über 130km/h $6.000";
+_text = "Innerorts über 200km/h $60.000";
 _data = "49";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Außerorts über 180km/h $10.000";
+_text = "Außerorts über 130km/h $6.000";
 _data = "50";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Außerorts über 230km/h+ $25.000";
+_text = "Außerorts über 180km/h $10.000";
 _data = "51";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Fahren ohne Fahrerlaubnis $5.000";
+_text = "Außerorts über 230km/h+ $25.000";
 _data = "52";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Fahren ohne Licht [Nachts] $2.000";
+_text = "Fahren ohne Fahrerlaubnis $5.000";
 _data = "53";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Fahren auf der falschen Straßenseite $3.000";
+_text = "Fahren ohne Licht [Nachts] $2.000";
 _data = "54";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Unfallverursacher $5.000";
+_text = "Fahren auf der falschen Straßenseite $3.000";
 _data = "55";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Fahrerflucht nach Unfall $5.000";
+_text = "Unfallverursacher $5.000";
 _data = "56";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Behinderung des Verkehrs $1.000";
+_text = "Fahrerflucht nach Unfall $5.000";
 _data = "57";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Vorsätzliches Überfahren von Spielern Inhaftierung";
+_text = "Behinderung des Verkehrs $1.000";
 _data = "58";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Falschparken $1.000";
+_text = "Vorsätzliches Überfahren von Spielern Inhaftierung";
 _data = "59";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Behinderung des Fahrzeugspawns $2.000";
+_text = "Falschparken $1.000";
 _data = "60";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Offroad (übers Feld fahren) $5.000";
+_text = "Behinderung des Fahrzeugspawns $2.000";
 _data = "61";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Fahren in gesperrten Gebieten $30.000";
+_text = "Offroad (übers Feld fahren) $5.000";
 _data = "62";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Verbotene Fahrzeuge $100.000";
+_text = "Fahren in gesperrten Gebieten $30.000";
 _data = "63";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Unnötiges Hupen $1.000-$5.000";
+_text = "Verbotene Fahrzeuge $100.000";
 _data = "64";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Einbruch $40.000";
+_text = "Unnötiges Hupen $1.000-$5.000";
 _data = "65";
+_list2 lbAdd format["%1 (%2)",_text,_data];
+_list2 lbSetData [(lbSize _list2)-1,_data];
+
+_text = "Einbruch $40.000";
+_data = "66";
+_list2 lbAdd format["%1 (%2)",_text,_data];
+_list2 lbSetData [(lbSize _list2)-1,_data];
+
+_text = "Transportieren von Fahrzeugen $10.000";
+_data = "67";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];

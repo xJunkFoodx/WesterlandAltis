@@ -70,7 +70,7 @@ switch (_className) do
 	case "O_Heli_Transport_04_bench_F": {50};
 	case "O_Heli_Transport_04_covered_F": {50};
 	case "O_Heli_Transport_04_medevac_F": {50};
-	case "B_Heli_Transport_03_F": {250};
-	case "B_Heli_Transport_03_unarmed_F": {375};
+	case "B_Heli_Transport_03_F": {375};
+	case "B_Heli_Transport_03_unarmed_F": {250};
 	default {-1};
 };

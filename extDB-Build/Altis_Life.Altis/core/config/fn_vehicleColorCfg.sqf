@@ -39,7 +39,7 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			[_path + "hatchback_01_ext_base09_co.paa","cop"],
-			["textures\vehicles\hatchback_police.jpg","cop"]
+			["textures\vehicles\police\hatchback_police.jpg","cop"]
 		];
 	};
 		
@@ -53,10 +53,8 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
-			/*["#(ai,64,64,1)Fresnel(0.3,3)","cop"],*/
-			["textures\vehicles\offroad_polizei.paa","cop"],
+			["textures\vehicles\police\polizei_OFFROAD.paa","cop"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
-			["textures\vehicles\offroad_polizei.paa","cop"],
 			["textures\vehicles\offroad_greenfoot.paa","civ"],
 			["textures\vehicles\offroad_tussi.paa","civ"],
 			["textures\vehicles\offroad_baustellenfahrzeug.paa","civ"],
@@ -64,8 +62,8 @@ switch (_vehicle) do
 			["textures\vehicles\offroad_monster.jpg","civ"],
 			["textures\vehicles\offroad_nyan.jpg","civ"],
 			["textures\vehicles\offroad_pokemon.jpg","civ"],
-			["textures\vehicles\adac_offroad.paa","adac"],
-			["#(ai,64,64,1)Fresnel(0.3,3)","cop"]
+			["textures\vehicles\adac\adac_offroad.paa","adac"],
+			["textures\vehicles\police\dea_OFFROAD.paa","cop"]
 		];
 	};
 	
@@ -85,7 +83,7 @@ switch (_vehicle) do
 			["textures\vehicles\hatchback_kitty.jpg","civ"],
 			["textures\vehicles\hatchback_blue.jpg","civ"],
 			["textures\vehicles\hatchback_metallica.jpg","civ"],
-			["textures\vehicles\hatchback_police.jpg","cop"],
+			["textures\vehicles\police\polizei_HATCHBACK.jpg","cop"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa","cop"]
 		];
@@ -99,11 +97,11 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
 			["textures\vehicles\Suvweiss.paa","civ"],
-			["textures\vehicles\SUV_polizei.paa","cop"],
+			["textures\vehicles\police\polizei_SUV.paa","cop"],
 			["textures\vehicles\suv_ragecore.jpg","civ"],
 			["textures\vehicles\suv_batman.paa","civ"],
 			["textures\vehicles\suv_superman.paa","civ"],
-			["textures\vehicles\medic_suv.paa","med"],
+			["textures\vehicles\medic\medic_suv.paa","med"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa","cop"]
 		];
@@ -115,7 +113,7 @@ switch (_vehicle) do
 		[
 			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa","civ"],
 			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa","civ"],
-			["textures\vehicles\medic_van_01.paa","med","textures\vehicles\medic_van_02.paa"]
+			["textures\vehicles\medic\medic_van_01.paa","med","textures\vehicles\medic\medic_van_02.paa"]
 		];
 	};
 	
@@ -147,9 +145,9 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\heli_light_01_polizei.paa","cop"],
+			["textures\vehicles\police\polizei_HUMMINGBIRD.paa","cop"],
 			/*["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","cop"],*/
-			["textures\vehicles\heli_light_01_polizei.paa","cop"],
+			["textures\vehicles\police\polizei_HUMMINGBIRD.paa","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","reb"],
@@ -163,17 +161,15 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","civ"],
-			["textures\vehicles\heli_light_01_weed.paa","civ"]
-			
+			["textures\vehicles\heli_light_01_weed.paa","civ"],
+			["textures\vehicles\police\dea_HUMMING.paa","cop"]
 		];
 	};
 	case "C_Heli_Light_01_civil_F":
 	{
 		_ret = 
 		[
-			["textures\vehicles\heli_light_01_polizei.paa","cop"],
-			/*["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","cop"],*/
-			["textures\vehicles\heli_light_01_polizei.paa","cop"],
+			["textures\vehicles\polizei_HUMMINGBIRD.paa","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","reb"],
@@ -187,7 +183,8 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","civ"],
-			["textures\vehicles\heli_light_01_weed.paa","civ"]
+			["textures\vehicles\heli_light_01_weed.paa","civ"],
+			["textures\vehicles\police\dea_HUMMING.paa","cop"]
 			
 		];
 	};
@@ -195,13 +192,13 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\orca_polizei.paa","cop"],
+			["textures\vehicles\police\polizei_ORCA.paa","cop"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","reb"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa","civ"],
-			["textures\vehicles\medic_orca.paa","med"],
-			["textures\vehicles\adac_orca.paa","adac"]
+			["textures\vehicles\medic\medic_orca.paa","med"],
+			["textures\vehicles\adac\adac_orca.paa","adac"]
 		];
 	};
 	
@@ -209,7 +206,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\hunter_polizei_front2.paa","cop","#(argb,8,8,3)color(0.05,0.05,0.05,1)"]
+			["textures\vehicles\police\polizei_HUNTER1.paa","cop","textures\vehicles\police\polizei_HUNTER2.paa"]
 		];
 	};
 	
@@ -267,7 +264,7 @@ switch (_vehicle) do
 		_ret =
 		[
 			["textures\vehicles\hellcat_angry.jpg","civ"],
-			["textures\vehicles\hellcat_polizei.paa","cop"],
+			["textures\vehicles\police\hellcat_polizei.paa","cop"],
 			["\a3\air_f_epb\Heli_Light_03\data\heli_light_03_base_indp_co","reb"]
 		];
 	};
@@ -276,7 +273,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["\a3\Soft_F_Beta\MRAP_03\Data\mrap_03_ext_co.paa","cop"]
+			["textures\vehicles\police\sh_STRIDER.paa","cop"]
 		];
 	};
 	
@@ -294,7 +291,7 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\vehicles\ghosthawk_police_ext_01.paa","cop","textures\vehicles\ghosthawk_police_ext_02.jpg"]
+			["textures\vehicles\police\ghosthawk_police_ext_01.paa","cop","textures\vehicles\police\ghosthawk_police_ext_02.jpg"]
 		];
 		
 	};
@@ -311,7 +308,31 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\adac_hemett_01.paa","adac","textures\vehicles\adac_hemett_02.paa"]
+			["textures\vehicles\adac\adac_hemett_01.paa","adac","textures\vehicles\adac\adac_hemett_02.paa"]
+		];
+	};
+	
+	case "C_Rubberboat":
+	{
+		_ret = 
+		[
+			["textures\vehicles\police\polizei_SCHLAUCHBOOT.paa","cop"]
+		];
+	};
+	
+	case "C_Boat_Civil_01_police_F":
+	{
+		_ret = 
+		[
+			["textures\vehicles\police\polizei_MOTORBOOT.paa","cop"]
+		];
+	};
+	
+	case "B_Boat_Armed_01_minigun_F":
+	{
+		_ret = 
+		[
+			["textures\vehicles\police\polizei_SPEEDBOOT.paa","cop"]
 		];
 	};
 };

@@ -105,7 +105,8 @@ switch (_shop) do
 			_return set[count _return,
 			["O_Heli_Transport_04_covered_F",1333333]];
 			_return set[count _return,
-			["B_Heli_Transport_03_F",2333333]];
+			["B_Heli_Transport_03_unarmed_F",2333333]];
+			
 		};
 	};
 	
@@ -120,7 +121,7 @@ switch (_shop) do
 		{
 			_return set[count _return,["C_Offroad_01_F",5000]];
 		};
-		if(__GETC__(life_coplevel) > 5 || license_cop_melee) then
+		if(__GETC__(life_coplevel) > 5 || license_cop_melee || license_cop_dea) then
 		{
 			_return set[count _return,["B_MRAP_01_F",30000]];
 			
@@ -145,7 +146,7 @@ switch (_shop) do
 			["I_Heli_light_03_unarmed_F",2300000],
 			["O_Heli_Transport_04_bench_F",1333333],
 			["O_Heli_Transport_04_covered_F",1333333],
-			["B_Heli_Transport_03_F",2333333]
+			["B_Heli_Transport_03_unarmed_F",2333333]
 		];
 	};
 	
@@ -283,7 +284,7 @@ switch (_shop) do
 				_return set[count _return,["O_Truck_03_covered_F",500000]];
 				_return set[count _return,["O_Truck_03_ammo_F",500000]];
 				_return set[count _return,["O_Truck_03_fuel_F",500000]];
-				_return set[count _return,["B_Heli_Transport_03_unarmed_F",2333333]];
+				_return set[count _return,["B_Heli_Transport_03_F",2333333]];
 			};
 			if(playerSide == west) then
 			{
@@ -330,7 +331,7 @@ switch (_shop) do
 			_return set[count _return,["O_Truck_03_fuel_F",500000]];
 			_return set[count _return,["I_Heli_Transport_02_F",1200000]];
 			_return set[count _return,["I_Heli_light_03_unarmed_F",1000000]];
-			_return set[count _return,["B_Heli_Transport_03_unarmed_F",2333333]];
+			_return set[count _return,["B_Heli_Transport_03",2333333]];
 		};
 	};
 	
