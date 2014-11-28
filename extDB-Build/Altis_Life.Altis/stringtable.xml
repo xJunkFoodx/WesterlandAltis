@@ -5536,6 +5536,11 @@
 			<English>Blindfold</English>
 			<German>Augen verb.</German>
 		</Key>
+		<Key ID="STR_pAct_Identity_document">
+			<Original>Ausweis zeigen</Original>
+			<English>show identity document</English>
+			<German>Ausweis zeigen</German>
+		</Key>
 	</Package>
 	<Package name="Smartphone">
 		<Key ID="STR_PM_Smartphone">
