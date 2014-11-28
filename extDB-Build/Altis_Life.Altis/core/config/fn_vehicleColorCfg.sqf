@@ -83,7 +83,7 @@ switch (_vehicle) do
 			["textures\vehicles\hatchback_kitty.jpg","civ"],
 			["textures\vehicles\hatchback_blue.jpg","civ"],
 			["textures\vehicles\hatchback_metallica.jpg","civ"],
-			["textures\vehicles\police\polizei_HATCHBACK.jpg","cop"],
+			["textures\vehicles\police\polizei_HATCHBACK.paa","cop"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa","cop"]
 		];
@@ -167,7 +167,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\polizei_HUMMINGBIRD.paa","cop"],
+			["textures\vehicles\police\polizei_HUMMINGBIRD.paa","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","reb"],
