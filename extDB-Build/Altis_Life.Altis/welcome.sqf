@@ -18,15 +18,17 @@ _role2names = ["Felix/Slappy","Shentoza"];
 _role3 = "Eure Admins";
 _role3names = ["graVediga","K3V1N"];
 _role4 = "Eure Supporter";
-_role4names = ["BlackBlood","Enrico","Dexton","Malu","AuRoRa"];
-_role5 = "Scripter";
-_role5names = ["Shentoza","Cheng | DONAR"];
-_role6 = "Website:";
-_role6names = ["www.westerland-altis.de"];
-_role7 = "Teamspeak:";
-_role7names = ["ts.westerland-altis.de:9987"];
-_role8 = "";
-_role8names = [""];
+_role4names = ["BlackBlood","Fathach","Enrico","Dexton","Malu","AuRoRa"];
+_role5 = "Eure Mapper";
+_role5names = ["Cheng | DONAR"];
+_role6 = "Eure Scripter";
+_role6names = ["Shentoza","Cheng | DONAR"];
+_role7 = "Website:";
+_role7names = ["www.westerland-altis.de"];
+_role8 = "Teamspeak:";
+_role8names = ["ts.westerland-altis.de:9987"];
+_role9 = "";
+_role9names = [""];
 {
 sleep 2;
 _memberFunction = _x select 0;
@@ -52,5 +54,6 @@ sleep (_onScreenTime);
 [_role4, _role4names],
 [_role5, _role5names],
 [_role6, _role6names],
-[_role7, _role7names]
+[_role7, _role7names],
+[_role8, _role8names]
 ];
