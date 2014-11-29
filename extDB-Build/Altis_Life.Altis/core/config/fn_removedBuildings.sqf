@@ -7,23 +7,23 @@
 */
 _remove = 
 [
-[3654.56,13196.9,-0.31782], //Kavalla Barracks on market
-[3231.31,12958.4,0.0354576] //HQ smallFactory
+"1:-1226584936", //Kavalla Barracks on market
+"1:-1243390316" //HQ smallFactory
 ];
 
 {
-_building = nearestBuilding _x;
-hideObjectGlobal _building;
-_building allowDamage false;
-_building enableSimulation false;
+	_building = objectFromNetId _x;
+	hideObjectGlobal _building;
+	_building allowDamage false;
+	_building enableSimulation false;
 }forEach _remove;
 
 //Invulnerable
 _inv=
 [
-[16042.4,16955.6,0.00146294] // Zentralbank
+	"1:-961500001" // Zentralbank
 ];
 {
-	_building = nearestBuilding _x;
+	_building = objectFromNetId _x;
 	_building allowDamage false;
 }forEach _inv;

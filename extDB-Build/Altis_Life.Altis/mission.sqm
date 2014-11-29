@@ -5964,7 +5964,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=7066;
+		items=7072;
 		class Item0
 		{
 			position[]={8456.1416,49.214363,12762.685};
@@ -12792,7 +12792,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""ranger_werbung.jpg""]";
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\ranger_werbung.jpg""]";
 		};
 		class Item711
 		{
@@ -15568,7 +15568,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""ranger_werbung.jpg""]";
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\ranger_werbung.jpg""]";
 		};
 		class Item976
 		{
@@ -85932,6 +85932,72 @@ class Mission
 			vehicle="Land_BuoyBig_F";
 			leader=1;
 			skill=0.60000002;
+		};
+		class Item7066
+		{
+			position[]={8703.5488,92.788147,15939.641};
+			azimut=20;
+			offsetY=-1;
+			id=7419;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\werbung2.jpg""]";
+		};
+		class Item7067
+		{
+			position[]={8711.6719,92.833885,15939.706};
+			azimut=340;
+			offsetY=-1;
+			id=7420;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\werbung1.jpg""]";
+		};
+		class Item7068
+		{
+			position[]={13967.809,16.788321,16366.354};
+			azimut=45;
+			offsetY=-1;
+			id=7421;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\werbung2.jpg""]";
+		};
+		class Item7069
+		{
+			position[]={13968.698,16.77417,16367.238};
+			azimut=225;
+			offsetY=-1;
+			id=7422;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\werbung1.jpg""]";
+		};
+		class Item7070
+		{
+			position[]={22659.682,14.467874,18954.354};
+			azimut=28;
+			offsetY=-1;
+			id=7423;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\werbung2.jpg""]";
+		};
+		class Item7071
+		{
+			position[]={22660.258,14.44323,18955.404};
+			azimut=208;
+			offsetY=-1;
+			id=7424;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\werbung1.jpg""]";
 		};
 	};
 	class Markers

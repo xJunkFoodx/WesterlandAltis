@@ -39,7 +39,7 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			[_path + "hatchback_01_ext_base09_co.paa","cop"],
-			["textures\vehicles\police\polizei_HATCHBACK.jpg","cop"]
+			["textures\vehicles\police\polizei_HATCHBACK.paa","cop"]
 		];
 	};
 		

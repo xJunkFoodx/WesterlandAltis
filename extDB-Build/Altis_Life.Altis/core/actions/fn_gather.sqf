@@ -15,9 +15,12 @@ life_action_gathering = true;
 [] spawn {
 	private ["_time"];
 	_time = time;
-	waitUntil{time - _time >= 8};
-	life_action_gathering = false;
-	hint "Fehler beim Abbauen. Du kannst nun erneut abbauen.";
+	waitUntil{time - _time >= 8 || !(life_action_gathering)};
+	if(life_action_gathering) then
+	{
+		life_action_gathering = false;
+		hint "Fehler beim Abbauen. Du kannst nun erneut abbauen.";
+	};
 };
 //Find out what zone we're near
 {

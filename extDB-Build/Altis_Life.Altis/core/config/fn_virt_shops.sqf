@@ -13,14 +13,12 @@ switch (_shop) do
 	case "market": {["Altis Market",["smartphone","beer","blackbeer","vodca","wine","sekt","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","storagesmall","storagebig"]]};
 	case "kanine": {["Kanine",["water","apple","peach","donuts","coffee","tbacon","rabbit"]]};
 	case "rebel": {
-		_return =["Rebel Market",["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]];
-		if(playerSide in [east]) then
-		{
-			(_return select 1) pushBack "zipties";
-			(_return select 1) pushBack "blindbag";
+	_return =["Rebel Market",["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]];
+	if(playerSide in [east]) then {
+			_return = ["Rebel Market",["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]];
 		};
-		_return
-		};
+	_return
+	};
 	case "gang": {["Gang Market", ["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Essen auf Raedern",["turtlesoup","turtle"]]};
 	case "coffee": {["Stratis Kaffee",["coffee","donuts"]]};
