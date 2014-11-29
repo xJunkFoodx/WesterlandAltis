@@ -413,7 +413,7 @@ switch (_code) do
 			player playmove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
 		};
 	};	//F5
-	case 62:
+	case 63:
 	{
 		if(!life_action_inUse) then
 		{
