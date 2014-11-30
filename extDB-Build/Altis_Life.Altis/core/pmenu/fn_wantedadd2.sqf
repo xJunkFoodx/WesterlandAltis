@@ -171,7 +171,7 @@ _data = "28";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Beamtenbeschuss $50.000";
+_text = "Beschuss $50.000";
 _data = "29";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -363,5 +363,10 @@ _list2 lbSetData [(lbSize _list2)-1,_data];
 
 _text = "Transportieren von Fahrzeugen $10.000";
 _data = "67";
+_list2 lbAdd format["%1 (%2)",_text,_data];
+_list2 lbSetData [(lbSize _list2)-1,_data];
+
+_text = "Tierquälerei $100.000";
+_data = "68";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];

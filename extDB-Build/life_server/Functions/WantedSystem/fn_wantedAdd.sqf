@@ -111,6 +111,7 @@ switch(_type) do
 	case "65": {_type = ["Lärmbelästigung durch unnötiges Hupen",0];};
 	case "66": {_type = ["Einbruch",40000];};
 	case "67": {_type = ["Transportieren von Fahrzeugen",10000];};
+	case "68": {_type = ["Tierquälerei",100000];};
 	
     default {_type = [];};
 };

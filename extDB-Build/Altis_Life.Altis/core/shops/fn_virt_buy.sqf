@@ -13,15 +13,23 @@ _price = lbValue[2401,(lbCurSel 2401)];
 _amount = ctrlText 2404;
 if(!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
 _restriction = 0;
+_license = "";
+_error = false;
 switch (_type) do {
 	case "radartrap": { _restriction = 2;};
+	case "ghilliepack": { _license = "sniper";};
+	case "dogfood": { _license = "dogfood";};
+	case "zipties": { _license = "rebel";};
+	case "blindbag": { _license = "rebel";};
 	default {};
 };
 ////Marktsystem Anfang////
 _marketprice = [_type] call life_fnc_marketGetBuyPrice;
+if(_license != "") then {
+	if( !(missionNamespace getVariable ([_license,0] call life_fnc_licenseType))) exitWith { hint "Du hast nicht die nötige Lizenz!"; _error = true;};
+};
 if(__GETC__(life_coplevel) < _restriction) exitWith {hint "Du hast nicht den benötigten Rang!";};
-if((_type == "ghilliepack") && ( !(license_cop_sniper)) ) exitWith {hint "Du hast nicht die benötigte Ausbildung!"};
-if((_type == "dogfood") && ( !(license_cop_dea)) ) exitWith {hint "Du bist kein DEA Mitglied!"};
+if(_error) exitWith {hint "Du hast nicht die nötige Lizenz!";};
 
 
 //Check if item is limited
