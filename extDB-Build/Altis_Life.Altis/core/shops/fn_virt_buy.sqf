@@ -18,7 +18,7 @@ _error = false;
 switch (_type) do {
 	case "radartrap": { _restriction = 2;};
 	case "ghilliepack": { _license = "sniper";};
-	case "dogfood": { _license = "dogfood";};
+	case "dogfood": { _license = "dea";};
 	case "zipties": { _license = "rebel";};
 	case "blindbag": { _license = "rebel";};
 	default {};

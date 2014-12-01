@@ -19,25 +19,25 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{	
-		_ret set[count _ret,["U_Rangemaster","Beamten Uniform",25]];
+		_ret pushBack ["U_Rangemaster","Beamten Uniform",25];
 		if(license_cop_dea) then {
-			_ret set[count _ret,["U_B_CombatUniform_mcam","DEA Uniform",2000]];
-			_ret set[count _ret,["U_C_HunterBody_grn","DEA Zivil 1",200]];
-			_ret set[count _ret,["U_OrestesBody","DEA Zivil 2",200]];
-			_ret set[count _ret,["U_NikosBody","DEA Zivil 3",200]];
-			_ret set[count _ret,["U_C_Poloshirt_blue","DEA Zivil 4",200]];
-			_ret set[count _ret,["U_C_Poor_1","DEA Zivil 5",200]];
+			_ret pushBack ["U_B_CombatUniform_mcam","DEA Uniform",2000];
+			_ret pushBack ["U_C_HunterBody_grn","DEA Zivil 1",200];
+			_ret pushBack ["U_OrestesBody","DEA Zivil 2",200];
+			_ret pushBack ["U_NikosBody","DEA Zivil 3",200];
+			_ret pushBack ["U_C_Poloshirt_blue","DEA Zivil 4",200];
+			_ret pushBack ["U_C_Poor_1","DEA Zivil 5",200];
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 3) then
 		{
 			if(!license_cop_dea) then {
-				_ret set[count _ret,["U_B_CombatUniform_mcam","Polizei Uniform",2000]];
+				_ret pushBack ["U_B_CombatUniform_mcam","Polizei Uniform",2000];
 			};
-			_ret set[count _ret,["U_B_Wetsuit","Taucher Anzug",2500]];
+			_ret pushBack ["U_B_Wetsuit","Taucher Anzug",2500];
 		};
 		/*if(__GETC__(life_coplevel) > 4) then
 		{
-			_ret set[count _ret,["U_B_CombatUniform_mcam","GSG9 Uniform",2000]];
+			_ret pushBack ["U_B_CombatUniform_mcam","GSG9 Uniform",2000];
 		};*/
 	};
 	
@@ -46,12 +46,12 @@ switch (_filter) do
 	{
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_ret set[count _ret,["H_Cap_blk",nil,150]];
-			_ret set[count _ret,["H_Cap_tan_specops_US",nil,150]];
+			_ret pushBack ["H_Cap_blk",nil,150];
+			_ret pushBack ["H_Cap_tan_specops_US",nil,150];
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
-			_ret set[count _ret,["H_Beret_blk_POLICE",nil,800]];
+			_ret pushBack ["H_Beret_blk_POLICE",nil,800];
 		};
 	};
 	
@@ -79,15 +79,15 @@ switch (_filter) do
 	{
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret set[count _ret,["V_TacVest_blk","Polizei Weste",1500]];
+			_ret pushBack ["V_TacVest_blk","Polizei Weste",1500];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{  	
-			_ret set[count _ret,["V_RebreatherIA","Taucher Weste",1500]];
+			_ret pushBack ["V_RebreatherIA","Taucher Weste",1500];
 		};
 		if(__GETC__(life_coplevel) > 4) then
 		{
-			_ret set[count _ret,["V_PlateCarrier1_blk",nil,2000]];
+			_ret pushBack ["V_PlateCarrier1_blk",nil,2000];
 		};
 	};
 	
@@ -103,9 +103,9 @@ switch (_filter) do
 			["B_Parachute",nil,500]
 		];
 		if(license_cop_dea) then {
-			_ret set[count _ret,["B_Bergen_sgg","DEA Rucksack",2500]];
+			_ret pushBack ["B_Bergen_sgg","DEA Rucksack",2500];
 		} else {
-			_ret set[count _ret,["B_Bergen_sgg",nil,2500]];
+			_ret pushBack ["B_Bergen_sgg",nil,2500];
 		};
 	};
 };
