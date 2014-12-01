@@ -13,7 +13,7 @@ switch (_shop) do
 	case "market": {["Altis Market",["smartphone","beer","blackbeer","vodca","wine","sekt","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","storagesmall","storagebig"]]};
 	case "kanine": {["Kanine",["water","apple","peach","donuts","coffee","tbacon","rabbit"]]};
 	case "rebel": {["Rebel Market",["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","zipties","blindbag"]];};
-	case "gang": {["Gang Market", ["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
+	case "gang": {["Gang Market", ["smartphone","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter","zipties","blindbag"]]};
 	case "wongs": {["Wong's Essen auf Raedern",["turtlesoup","turtle"]]};
 	case "coffee": {["Stratis Kaffee",["coffee","donuts"]]};
 	case "heroin": {["Drogendealer",["cocainep","heroinp","marijuana","meth"]]};
