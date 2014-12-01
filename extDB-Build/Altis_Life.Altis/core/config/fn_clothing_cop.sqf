@@ -44,12 +44,12 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 3) then
 		{
 			_ret pushBack ["H_Cap_blk",nil,150];
 			_ret pushBack ["H_Cap_tan_specops_US",nil,150];
 		};
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) > 5) then
 		{
 			_ret pushBack ["H_Beret_blk_POLICE",nil,800];
 		};
@@ -77,17 +77,19 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) > 2) then
 		{
 			_ret pushBack ["V_TacVest_blk","Polizei Weste",1500];
 		};
-		if(__GETC__(life_coplevel) > 2) then
-		{  	
-			_ret pushBack ["V_RebreatherIA","Taucher Weste",1500];
-		};
-		if(__GETC__(life_coplevel) > 4) then
+		
+		if(__GETC__(life_coplevel) > 3) then
 		{
 			_ret pushBack ["V_PlateCarrier1_blk",nil,2000];
+		};
+		
+		if(__GETC__(life_coplevel) > 4) then
+		{  	
+			_ret pushBack ["V_RebreatherIA","Taucher Weste",1500];
 		};
 	};
 	
