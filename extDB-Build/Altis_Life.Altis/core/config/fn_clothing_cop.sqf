@@ -82,14 +82,14 @@ switch (_filter) do
 			_ret pushBack ["V_TacVest_blk","Polizei Weste",1500];
 		};
 		
-		if(__GETC__(life_coplevel) > 3) then
-		{
-			_ret pushBack ["V_PlateCarrier1_blk",nil,2000];
-		};
-		
 		if(__GETC__(life_coplevel) > 4) then
 		{  	
 			_ret pushBack ["V_RebreatherIA","Taucher Weste",1500];
+		};
+		
+		if( __GETC__(life_coplevel) > 6 || license_cop_dea || license_cop_melee ) then
+		{
+			_ret pushBack ["V_PlateCarrier1_blk",nil,2000];
 		};
 	};
 	
