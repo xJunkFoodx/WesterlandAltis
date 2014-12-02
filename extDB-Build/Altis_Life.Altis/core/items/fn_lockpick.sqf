@@ -76,7 +76,8 @@ if(!_isVehicle) then {
 	_dice = random(100);
 	if(_dice < 30) then {
 		titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
-		life_vehicles pushBack _curTarget;
+		[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
+		[[_veh,0],"life_fnc_setFuelCargo",_veh,false] spawn life_fnc_MP;
 		[[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	} else {
 		[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
