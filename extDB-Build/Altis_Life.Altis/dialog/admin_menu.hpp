@@ -102,7 +102,7 @@ class life_admin_menu {
 		class Spectate : Life_RscButtonMenu {
 			idc = 2905;
 			text = "$STR_Admin_Spectate";
-			onButtonClick = "[] call life_fnc_adminSpectate;";
+			onButtonClick = "[] spawn life_fnc_adminSpectate;";
 			x = 0.42 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.88 - (1 / 25);
 			w = (6.25 / 40);
