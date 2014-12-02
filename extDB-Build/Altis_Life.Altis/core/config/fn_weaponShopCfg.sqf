@@ -91,8 +91,7 @@ switch(_shop) do
 			_return = _return + 
 			[
 				["arifle_sdar_F","Taser Rifle",500],
-				["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
-				["MineDetector",nil,1000]
+				["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
 			];
 		};
 		if (__GETC__(life_coplevel) >= 3 || license_cop_negotiate || license_cop_melee) then {
@@ -119,6 +118,12 @@ switch(_shop) do
 				["optic_Hamr",nil,3500]
 			];
 		};
+		if (__GETC__(life_coplevel) >= 5) then {
+			_return = _return + 
+			[
+				["optic_SOS",nil,200];
+			];
+		};
 		if (__GETC__(life_coplevel) >= 5 || license_cop_sniper || license_cop_melee) then {
 			_return = _return + 
 			[
@@ -132,7 +137,6 @@ switch(_shop) do
 			_return = _return + 
 			[
 				["arifle_MX_SW_Black_F",nil,10000],
-				["muzzle_snds_H_MG",nil,2000],
 				["muzzle_snds_H_SW",nil,2000],
 				["optic_Arco",nil,3500]
 			];
@@ -164,8 +168,7 @@ switch(_shop) do
 			[
 				["srifle_EBR_F",nil,10000],
 				["20Rnd_762x51_Mag",nil,200],
-				["muzzle_snds_B",nil,2000],
-				["optic_SOS",nil,200]
+				["muzzle_snds_B",nil,2000]
 			];
 		};
 		
