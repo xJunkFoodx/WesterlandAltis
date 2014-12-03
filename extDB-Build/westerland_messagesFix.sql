@@ -1,0 +1,2 @@
+ALTER TABLE `messages`
+	ADD COLUMN `active` TINYINT NOT NULL DEFAULT '1' AFTER `time`;
