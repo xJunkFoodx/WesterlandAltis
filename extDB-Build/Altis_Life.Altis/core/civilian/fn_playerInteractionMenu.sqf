@@ -43,6 +43,13 @@ _Btn5 ctrlShow false;
 _Btn6 ctrlShow false;
 _Btn7 ctrlShow false;
 
+
+	(_buttonArray select _select) ctrlSetText localize "STR_pAct_Identity_document";
+	(_buttonArray select _select) buttonSetAction "[life_pInact_curTarget] call life_fnc_showIdentity";
+	(_buttonArray select _select) ctrlShow true;
+	_select = _select +1;
+
+
 if (life_pInact_curTarget getVariable["knockedout",false]) then {
 	(_buttonArray select _select) ctrlSetText localize "STR_pAct_SmartphoneSteal";
 	(_buttonArray select _select) buttonSetAction "[] call life_fnc_stealPhoneAction;";

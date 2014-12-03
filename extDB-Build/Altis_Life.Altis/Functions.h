@@ -330,6 +330,8 @@ class Life_Client_Core
 		class civLoadout {};
 		class stealPhoneClient {};
 		class playerInteractionMenu {};
+		class showIdentity {};
+		class getIdentityshown {};
 	};
 	
 	class Vehicle

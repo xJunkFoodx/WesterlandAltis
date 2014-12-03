@@ -5537,9 +5537,9 @@
 			<German>Augen verb.</German>
 		</Key>
 		<Key ID="STR_pAct_Identity_document">
-			<Original>Ausweis zeigen</Original>
-			<English>show identity document</English>
-			<German>Ausweis zeigen</German>
+			<Original>Ausweis</Original>
+			<English>identity document</English>
+			<German>Ausweis</German>
 		</Key>
 	</Package>
 	<Package name="Smartphone">
