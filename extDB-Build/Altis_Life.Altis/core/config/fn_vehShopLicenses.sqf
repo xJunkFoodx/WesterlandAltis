@@ -20,7 +20,11 @@ switch (life_veh_shop select 0) do
 	case "adac_shop": {_ret = true;};
 	case "adac_air_hs": {_ret = true;};
 	case "med_shop": {_ret = true;};
-	case "kart_shop": {_ret = license_civ_driver;};
+	case "kart_shop": {
+						if(playerSide in [west,independent]) then {_ret = true; }
+						else {_ret = license_civ_driver;};
+					
+					};
 	case "med_air_hs": {_ret = true;};
 	case "civ_car": {_ret = license_civ_driver;};
 	case "civ_ship": {_ret = license_civ_boat;};
