@@ -67,13 +67,25 @@ switch(_mode) do {
 	
 	case 6: {
 		_valueAliases = [(_this select 2),1,[],[[]]] call BIS_fnc_param;
+		if(count _valueAliases == 0) then {
+			diag_log format["EMPTY ALIASES UPDATE FOR PLAYERID: %1",_uid];
+			diag_log format["BEFORE fnc_params it was: %1",(_this select 2) select 1];
+		};
 		_valueAliases = [_valueAliases] call DB_fnc_mresArray;
 		_valueName = [(_this select 2),0,"",[""]] call BIS_fnc_param;
+		if(_valueName == "") then {
+			diag_log format["EMPTY NAME UPDATE PLAERID: %1",_uid];
+			diag_log format["BEFORE fnc_params it was: %1",(_this select 2) select 0];
+			};
 		_valueName = [_valueName] call DB_fnc_mresString;
 		_query = format["UPDATE players SET name='%1', aliases='%2' WHERE playerid='%3'",_valueName,_valueAliases,_uid];
 	};
 	case 7: {
 		_value = [_this,2,"",[""]] call BIS_fnc_param;
+		if(_value == "") then {
+			diag_log format["EMPTY NAME UPDATE PLAERID: %1",_uid];
+			diag_log format["BEFORE fnc_params it was: %1",(_this select 2)];
+		};
 		_value = [_value] call DB_fnc_mresString;
 		_query = format["UPDATE players SET name='%1' WHERE playerid='%2'",_value,_uid];
 	};

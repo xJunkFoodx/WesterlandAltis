@@ -57,6 +57,7 @@ _queryResult set[3,[_tmp] call DB_fnc_numberSafe];
 //ALIASES
 _new = [(_queryResult select 6)] call DB_fnc_mresToArray;
 if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+diag_log format["Aliases before query: %1 -------- Aliases in array: %2",_queryResult select 6,_new];
 _queryResult set [6,_new];
 
 //Parse licenses (Always index 7)

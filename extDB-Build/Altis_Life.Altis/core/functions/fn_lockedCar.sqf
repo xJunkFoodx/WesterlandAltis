@@ -1,4 +1,5 @@
 /*
+	  File: fn_lockedCar.sqf
       Created by Shentoza
 	  Date: 09.08.
 	  Checks if the vehicle is locked, and disables the HUD ( therefore any interaction with the vehicle)
