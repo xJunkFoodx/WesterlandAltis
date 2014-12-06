@@ -82,7 +82,7 @@ switch(_mode) do {
 	};
 	case 7: {
 		_value = [_this,2,"",[""]] call BIS_fnc_param;
-		if(_value == "") then {
+		if(_value != profileName) then {
 			diag_log format["EMPTY NAME UPDATE PLAERID: %1",_uid];
 			diag_log format["BEFORE fnc_params it was: %1",(_this select 2)];
 		};

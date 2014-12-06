@@ -121,7 +121,7 @@ switch(_shop) do
 		if (__GETC__(life_coplevel) >= 5) then {
 			_return = _return + 
 			[
-				["optic_SOS",nil,200];
+				["optic_SOS",nil,200]
 			];
 		};
 		if (__GETC__(life_coplevel) >= 5 || license_cop_sniper || license_cop_melee) then {

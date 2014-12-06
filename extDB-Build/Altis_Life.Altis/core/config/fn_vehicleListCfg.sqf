@@ -263,7 +263,7 @@ switch (_shop) do
 			};
 			if(playerSide == west) then
 			{
-				if(__GETC__(life_coplevel) > 5 || license_cop_sniper)) then
+				if(__GETC__(life_coplevel) > 5 || license_cop_sniper) then
 				{
 					_return set[count _return,["O_Heli_Light_02_unarmed_F",66666]];
 				};
