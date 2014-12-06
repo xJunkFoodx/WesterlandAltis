@@ -3662,7 +3662,6 @@ class Mission
 					side="GUER";
 					vehicle="I_Story_Colonel_F";
 					player="PLAY CDG";
-					forceHeadlessClient=1;
 					leader=1;
 					skill=0.60000002;
 					text="hc_1";
@@ -12792,7 +12791,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\ranger_werbung.jpg""]";
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\werbung2.jpg""]";
 		};
 		class Item711
 		{
@@ -15568,7 +15567,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\ranger_werbung.jpg""]";
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""bilder\werbung1.jpg""]";
 		};
 		class Item976
 		{
