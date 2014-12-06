@@ -69,7 +69,7 @@ switch(_mode) do {
 		_valueAliases = [(_this select 2),1,[],[[]]] call BIS_fnc_param;
 		if(count _valueAliases == 0) then {
 			diag_log format["EMPTY ALIASES UPDATE FOR PLAYERID: %1",_uid];
-			diag_log format["BEFORE fnc_params it was: %1",(_this select 2) select 1];
+			diag_log format["BEFORE fnc_params it was: %1",((_this select 2) select 1)];
 		};
 		_valueAliases = [_valueAliases] call DB_fnc_mresArray;
 		_valueName = [(_this select 2),0,"",[""]] call BIS_fnc_param;
