@@ -15,7 +15,7 @@ switch (_className) do
 	case "B_G_Offroad_01_armed_F": {0};
 	case "B_Heli_Transport_01_F": {0};
 	case "B_SDV_01_F": {0};
-	case "B_Truck_01_mover_F": {400};
+	case "B_Truck_01_mover_F": {20};
 	case "C_Kart_01_Blu_F": {0};
 	case "C_Kart_01_Fuel_F": {0};
 	case "C_Kart_01_Red_F": {0};
