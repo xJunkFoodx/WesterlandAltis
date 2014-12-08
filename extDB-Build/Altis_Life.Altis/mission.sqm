@@ -23420,13 +23420,13 @@ class Mission
 		class Item1705
 		{
 			position[]={14276.587,19.468904,16266.023};
-			azimut=214.99927;
+			azimut=214.99899;
 			special="NONE";
 			id=2058;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; tthis addAction[""Notarzt Hubschrauber"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""med_air_3"",""med"",""Kavala Hosptial"",true],0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)']; this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_air_3""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == independent'];";
+			init="this allowDamage false; this addAction[""Notarzt Hubschrauber"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""med_air_3"",""med"",""Kavala Hosptial"",true],0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)']; this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_air_3""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == independent'];";
 		};
 		class Item1706
 		{
