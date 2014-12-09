@@ -23,7 +23,6 @@ class Mission
 		"A3_Structures_F_Items_Documents",
 		"A3_Structures_F_Items_Luggage",
 		"A3_Structures_F_Training",
-		"A3_Structures_F_Ind_Tank",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Mil_Cargo",
 		"A3_Structures_F_Civ_Lamps",
@@ -51,13 +50,9 @@ class Mission
 		"A3_Structures_F_EPB_Furniture",
 		"A3_Structures_F_EPA_Items_Tools",
 		"A3_Structures_F_EPB_Civ_Camping",
-		"A3_Structures_F_Civ_PlayGround",
 		"A3_Weapons_F_Vests",
-		"a3_weapons_f",
 		"A3_Weapons_F_CSAT",
-		"A3_Structures_F_EPB_Items_Military",
 		"A3_Structures_F_EPA_Items_Vessels",
-		"A3_Air_F_Gamma_UAV_01",
 		"A3_Air_F_Heli_Light_01",
 		"A3_Structures_F_Naval_Piers",
 		"A3_Structures_F_EPC_Civ_Kiosks",
@@ -3503,7 +3498,7 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.60000002;
-					init="null=[this] execVM ""scripts\modify_npc.sqf""; this addAction[""Notarzt Items"",life_fnc_virt_menu,""medic"",0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)']; this addAction[""Notarzt Ausrüstung"",life_fnc_weaponShopMenu,""med_basic"",0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)']; this addAction[""Notarzt Hubschrauber"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_air_1"",""med"",""Kavala Hosptial"",true],0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)']; this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent ']; this setObjectTexture [0,""textures\uniform\medic.paa""];";
+					init="null=[this] execVM ""scripts\modify_npc.sqf""; this addAction[""Notarzt Items"",life_fnc_virt_menu,""medic"",0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)']; this addAction[""Notarzt Ausrüstung"",life_fnc_weaponShopMenu,""med_basic"",0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)']; this addAction[""Notarzt Hubschrauber"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_air_1"",""med"",""Kavala Hosptial"",false],0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)']; this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent ']; this setObjectTexture [0,""textures\uniform\medic.paa""];";
 				};
 				class Item140
 				{
@@ -3595,7 +3590,7 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.60000002;
-					init="null=[this] execVM ""scripts\modify_npc.sqf"";this addAction[""ADAC Auto"",life_fnc_vehicleShopMenu,[""adac_shop"",independent,""adac_car_2"",""adac"",""ADAC Basis"",true],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this addAction[""ADAC Hubschrauber"",life_fnc_vehicleShopMenu,[""adac_air_hs"",independent,""adac_air_2"",""adac"",""ADAC Basis"",true],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this setObjectTexture [0,""textures\uniform\adac.paa""];";
+					init="null=[this] execVM ""scripts\modify_npc.sqf"";this addAction[""ADAC Auto"",life_fnc_vehicleShopMenu,[""adac_shop"",independent,""adac_car_2"",""adac"",""ADAC Basis"",false],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this addAction[""ADAC Hubschrauber"",life_fnc_vehicleShopMenu,[""adac_air_hs"",independent,""adac_air_2"",""adac"",""ADAC Basis"",false],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this setObjectTexture [0,""textures\uniform\adac.paa""];";
 				};
 				class Item148
 				{
@@ -22950,13 +22945,13 @@ class Mission
 		class Item1660
 		{
 			position[]={14167.489,16.549498,16531.051};
-			azimut=131.7308;
+			azimut=131.731;
 			special="NONE";
 			id=2013;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this addAction[""ADAC Auto"",life_fnc_vehicleShopMenu,[""adac_shop"",independent,""adac_car_1"",""adac"",""Kavala Hosptial""],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this addAction[""Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""laedt Fahrzeuge....""]; life_garage_sp = ""adac_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent']; this addAction[""Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == independent'];";
+			init="this allowDamage false; this addAction[""ADAC Auto"",life_fnc_vehicleShopMenu,[""adac_shop"",independent,""adac_car_1"",""adac"",""ADAC""],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this addAction[""Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""laedt Fahrzeuge....""]; life_garage_sp = ""adac_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent']; this addAction[""Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == independent'];";
 		};
 		class Item1661
 		{
@@ -22967,7 +22962,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this addAction[""ADAC Hubschrauber"",life_fnc_vehicleShopMenu,[""adac_air_hs"",independent,""adac_air_1"",""adac"",""Kavala Hosptial"",true],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == independent'];";
+			init="this allowDamage false; this addAction[""ADAC Hubschrauber"",life_fnc_vehicleShopMenu,[""adac_air_hs"",independent,""adac_air_1"",""adac"",""Kavala Hosptial"",false],0,FALSE,FALSE,"""",'playerSide == independent && !(player call life_fnc_isMedic)']; this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == independent'];";
 		};
 		class Item1662
 		{
@@ -23154,7 +23149,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this addAction[""Notarzt Hubschrauber"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""med_air_3"",""med"",""Kavala Hosptial"",true],0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)']; this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_air_3""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == independent'];";
+			init="this allowDamage false; this addAction[""Notarzt Hubschrauber"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""med_air_3"",""med"",""Kavala Hosptial"",false],0,FALSE,FALSE,"""",'playerSide == independent && (player call life_fnc_isMedic)']; this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,player call life_fnc_getRole,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_air_3""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == independent'];";
 		};
 		class Item1679
 		{
